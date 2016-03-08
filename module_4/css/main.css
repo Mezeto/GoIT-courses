@@ -1,0 +1,164 @@
+.clearfix:after {
+    content: ' ';
+    display: block;
+    clear: both;
+}
+
+body {
+    background: url("../img/bg_main.jpg");
+}
+
+.wrapper {
+    width: 998px;
+    padding-top: 10px;
+    margin: 39px auto 0 auto;
+    background: #fff;
+
+    -webkit-box-shadow:  0 5px 10px #000;
+    -moz-box-shadow:  0 5px 10px #000;
+    box-shadow:  0 5px 10px #000;
+}
+
+p, a {
+    font-family: Arial, sans-serif;
+}
+
+.header {
+    padding: 0 30px;
+    overflow: hidden;
+    position: relative;
+}
+
+.header .logo {
+    width: 283px;
+    height: 164px;
+    float: left;
+}
+
+.header p {
+    color: #128aa7;
+    font-size: 14px;
+    line-height: 1.3;
+}
+
+.header .contact {
+    float: right;
+}
+
+.header ul {
+    float: right;
+    position: absolute;
+    right: 30px;
+    bottom: 7px;
+}
+
+.header li {
+    float: left;
+    margin-left: 17px;
+    font-size: 10px;
+    color: #128aa7;
+    text-align: center;
+}
+
+.header li p {
+    font-size: 11px;
+}
+
+.big-photo {
+    width: 996px;
+    height: 237px;
+    border: 1px solid #128aa7;
+}
+
+.big-photo img {
+    width: 996px;
+}
+
+.nav {
+    position: relative;
+    border-bottom: 1px solid #000;
+    background: #353535;
+
+    -webkit-box-shadow:  0 3px 3px #303030;
+    -moz-box-shadow:  0 3px 3px #303030;
+    box-shadow:  0 3px 3px #303030;
+}
+
+
+.nav li {
+    margin: 7px 0 7px 60px;
+    position: relative;
+    float: left;
+}
+
+.nav li:hover ul {
+    display: block;
+}
+
+.nav li a {
+    font-size: 14px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.nav li ul {
+    display: none;
+    width: 150px;
+    position: absolute;
+    left: -7px;
+    top: 24px;
+    background: #353535;
+
+    -webkit-box-shadow:  0 3px 5px #303030;
+    -moz-box-shadow:  0 3px 5px #303030;
+    box-shadow:  0 3px 5px #303030;
+}
+
+.nav li ul li {
+    float: none;
+    margin: 7px 0 10px 7px;
+}
+
+.container {
+    padding: 10px 0 20px 0;
+    background: url("../img/bg_container.png") repeat-y;
+    font-size: 14px;
+    color: #424c43;
+    line-height: 1.5;
+}
+
+.container .info {
+    width: 205px;
+    padding-left: 15px;
+    float: left;
+}
+
+.container .content {
+    width: 560px;
+    margin: 0 auto;
+    float: left;
+}
+
+.container .news {
+    width: 192px;
+    float: right;
+}
+
+.container h3 {
+    padding-bottom: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.footer {
+    padding: 15px 0;
+    text-align: center;
+}
+
+.footer p {
+    font-size: 12px;
+    color: #fff;
+}
+
+
