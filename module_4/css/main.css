@@ -106,7 +106,7 @@ p, a {
     width: 150px;
     position: absolute;
     left: -7px;
-    top: 24px;
+    top: 100%;
     background: #353535;
 
     -webkit-box-shadow:  0 3px 5px #303030;
