@@ -16,6 +16,8 @@
 }
 
 body {
+    background: url("../img/bg.jpg") no-repeat center fixed;
+    background-size: cover;
     font-family: helveticaneuecyrthin, Helvetica, Arial, sans-serif;
     color: #fff;
 }
@@ -28,7 +30,11 @@ a {
     width: 1215px;
     height: 1064px;
     margin: 0 auto;
-    background: url("../img/bg.jpg");
+}
+
+.top-line_wrapper {
+    width: 1215px;
+    margin: 0 auto;
 }
 
 .top-line {
@@ -64,42 +70,26 @@ a {
     border-right: 1px solid #60b5ed;
 }
 
-.top-line li a img {
-    position: relative;
-    left: 0;
-    top: -3px;
-}
-
-.top-line li a span {
-    position: relative;
-    left: 10px;
-    top: -10px;
-}
-
-.top-line li a.flag {
-    padding: 10px 20px 0 15px;
+.top-line li.flag {
+    padding: 10px 20px 10px 43px;
+    background: url("../img/flag_line-top.png") no-repeat left 14px top 6px;
     color: #fff;
 }
 
 .top-line li:last-child {
+    padding: 10px;
     border-radius: 2px;
     background: linear-gradient(to bottom, rgba(80,176,220,1) 0%, rgba(46,122,196,1) 100%);
     color: #fff;
 }
 
-.top-line li:last-child a {
-    color: #fff;
-}
-
 .top-line li:last-child span {
-    position: relative;
-    left: 0;
-    top: 0;
     text-decoration: underline;
 }
 
-.top-line li:nth-child(6):hover{
-    background: none;
+.top-line li:last-child span:hover {
+    text-decoration: none;
+    cursor: pointer;
 }
 
 .top-line li:last-child:hover {
@@ -112,6 +102,60 @@ a {
     text-align: center;
 }
 
+.container_facebook {
+    display: block;
+    width: 276px;
+    height: 34px;
+    margin: 0 auto 33px auto;
+    position: relative;
+}
+
+.icon-facebook {
+    display: block;
+    width: 40px;
+    height: 100%;
+    border-right: 1px solid #203b70;
+    border-top: 1px solid #7789b7;
+    border-radius: 5px 0 0 5px;
+    background: linear-gradient(to bottom, #28539B, #193F7B);
+    float: left;
+}
+
+.icon-facebook img {
+    position: absolute;
+    left: 16px;
+    top: 6px;
+}
+
+.text-facebook {
+    display: block;
+    width: 234px;
+    height: 100%;
+    border-left: 1px solid #7789b7;
+    border-top: 1px solid #7789b7;
+    border-radius: 0 5px 5px 0;
+    background: linear-gradient(to bottom, #28539B, #193F7B);
+    float: left;
+    color: #fff;
+}
+
+.text-facebook > span {
+    position: absolute;
+    left: 72px;
+    top: 10px;
+}
+
+.text-facebook .bold {
+    font-weight: bold;
+}
+
+.text-facebook:after {
+    content: url("../img/arrow.png");
+    position: absolute;
+    right: 25px;
+    top: 10px;
+}
+
 .form_header {
     padding: 17px 0;
     margin-bottom: 2px;
@@ -121,12 +165,8 @@ a {
 }
 
 .form_main {
-    padding-bottom: 20px;
+    padding: 33px 0 20px 0;
     background: rgba(0,0,0, 0.7);
-}
-
-.form_main input[type=image] {
-    margin: 33px 0;
 }
 
 .form_main .for_border-left_and_right {
@@ -134,17 +174,26 @@ a {
     margin: 0 auto;
 }
 
+.border-top:before {
+    content: '';
+    display: block;
+    border-top: 1px solid #666666;
+}
+
+.border-bottom:after {
+    content: '';
+    display: block;
+    border-bottom: 1px solid #000;
+}
+
 .form_main .for_border-left {
     width: 120px;
-    border-top: 1px solid #666666;
-    border-bottom: 1px solid #000;
     float: left;
 }
 
+
 .form_main .for_border-right {
     width: 120px;
-    border-top: 1px solid #666666;
-    border-bottom: 1px solid #000;
     float: right;
 }
 
@@ -181,9 +230,9 @@ a {
     background: #1b5288;
     color: #fffbfb;
 
-    -webkit-box-shadow:  0 0 10px #1b5288;
-    -moz-box-shadow:  0 0 10px #1b5288;
-    box-shadow:  0 0 10px #1b5288;
+    -webkit-box-shadow:  0 0 9px 4px #689bcc;
+    -moz-box-shadow:  0 0 9px 4px #689bcc;
+    box-shadow:  0 0 9px 4px #689bcc;
 }
 
 .form_main .checkbox {
@@ -199,6 +248,7 @@ a {
     background: linear-gradient(to bottom, rgba(80,176,220,1) 0%, rgba(46,122,196,1) 100%);
     color: #fff;
     font-weight: bold;
+    cursor: pointer;
 }
 
 .form_main p {
