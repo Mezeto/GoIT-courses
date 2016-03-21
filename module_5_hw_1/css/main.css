@@ -174,25 +174,20 @@ a {
     margin: 0 auto;
 }
 
-.border-top:before {
+.border-left:before {
     content: '';
     display: block;
     border-top: 1px solid #666666;
-}
-
-.border-bottom:after {
-    content: '';
-    display: block;
     border-bottom: 1px solid #000;
-}
-
-.form_main .for_border-left {
     width: 120px;
     float: left;
 }
 
-
-.form_main .for_border-right {
+.border-right:after {
+    content: '';
+    display: block;
+    border-top: 1px solid #666666;
+    border-bottom: 1px solid #000;
     width: 120px;
     float: right;
 }
