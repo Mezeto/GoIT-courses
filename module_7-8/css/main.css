@@ -105,6 +105,7 @@ header {
 .slider {
     max-width: 960px;
     margin: 0 auto;
+    position: relative;
 }
 
 .slider__content {
@@ -143,6 +144,22 @@ header {
     top: 150px;
 }
 
+.points {
+    position: absolute;
+    left: 75%;
+    bottom: -70px;
+}
+
+.points span {
+    display: block;
+    width: 17px;
+    height: 17px;
+    border-radius: 50%;
+    margin: 0 5px;
+    float: left;
+    background: rgba(0,0,0,0.3);
+}
+
 .wrapper-about {
     padding: 76px 0 68px 0;
     border-top: 1px solid #33253a;
@@ -172,24 +189,36 @@ header {
 }
 
 .about__item--icon-tool:before {
-    content: url("../img/tool.png");
+    content: ' ';
+    display: block;
+    width: 34px;
+    height: 34px;
     position: absolute;
     left: -50px;
     top: 5px;
+    background: url(../img/sprit.png) 0 0 no-repeat;
 }
 
 .about__item--icon-message:before {
-    content: url("../img/message.png");
+    content: ' ';
+    display: block;
+    width: 34px;
+    height: 34px;
     position: absolute;
     left: -50px;
     top: 5px;
+    background: url(../img/sprit.png) -28px 0 no-repeat;
 }
 
 .about__item--icon-music:before {
-    content: url("../img/music.png");
+    content: ' ';
+    display: block;
+    width: 34px;
+    height: 34px;
     position: absolute;
     left: -50px;
     top: 5px;
+    background: url(../img/sprit.png) -62px 0 no-repeat;
 }
 
 .about__header {
@@ -279,11 +308,16 @@ header {
     line-height: 24px;
 }
 
-.posts__header-small {
-    font-family: 'Open-Sans-extrabold', Arial, sans-serif;
-    font-size: 16px;
-    color: #454545;
-    line-height: 24px;
+.points--article {
+    margin: 0;
+    position: absolute;
+    left: 35%;
+    bottom: -48px;
+}
+
+.points--article span {
+    border: 1px solid #e6e6e6;
+    background: rgba(255,255,255,255.3);
 }
 
 .posts__recent {
@@ -293,6 +327,13 @@ header {
     -moz-box-sizing: border-box;
     box-sizing: border-box;
     float: left;
+}
+
+.posts__header-small {
+    font-family: 'Open-Sans-extrabold', Arial, sans-serif;
+    font-size: 16px;
+    color: #454545;
+    line-height: 24px;
 }
 
 .posts__go-to-post {
@@ -711,6 +752,12 @@ footer {
     .slider__play img {
         width: 56px;
         height: 100%;
+    }
+
+    .points {
+        position: absolute;
+        left: 42%;
+        bottom: -70px;
     }
 
     /**********ABOUT**************/
