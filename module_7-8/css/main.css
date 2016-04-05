@@ -146,16 +146,16 @@ header {
 
 .points {
     position: absolute;
-    left: 75%;
-    bottom: -70px;
+    left: 74%;
+    bottom: -111px;
 }
 
 .points span {
     display: block;
-    width: 17px;
-    height: 17px;
+    width: 16px;
+    height: 16px;
     border-radius: 50%;
-    margin: 0 5px;
+    margin: 0 3px;
     float: left;
     background: rgba(0,0,0,0.3);
 }
@@ -168,8 +168,8 @@ header {
     background: -moz-linear-gradient(top, rgba(116,80,131,1) 0%, rgba(50,37,57,1) 100%);
     background: -o-linear-gradient(top, rgba(116,80,131,1) 0%, rgba(50,37,57,1) 100%);
     background: -ms-linear-gradient(top, rgba(116,80,131,1) 0%, rgba(50,37,57,1) 100%);
-    background: linear-gradient(to bottom, rgba(116,80,131,1) 0%, rgba(50,37,57,1) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#745083', endColorstr='#322539', GradientType=0 );
+    background: linear-gradient(to bottom, rgba(116,80,131,1) 0%, rgba(50,37,57,1) 100%);
 }
 
 .about {
@@ -251,7 +251,7 @@ header {
 }
 
 .wrapper-posts {
-    padding: 99px 0 67px 0;
+    padding: 99px 0 91px 0;
     background: #f9f9f9;
 }
 
@@ -313,8 +313,8 @@ header {
 .points--article {
     margin: 0;
     position: absolute;
-    left: 35%;
-    bottom: -48px;
+    left: 40%;
+    bottom: -41px;
 }
 
 .points--article span {
@@ -366,10 +366,14 @@ header {
 
 .posts__more {
     float: right;
-    margin: 5px 2px 0 0;
+    margin: 5px 12px 0 0;
     font-size: 18px;
     color: #454545;
     text-transform: uppercase;
+}
+
+.posts__hidden--media-960 {
+    display: none;
 }
 
 .wrapper-brands {
@@ -521,9 +525,14 @@ footer {
         box-sizing: border-box;
     }
 
+    .header-and-slider {
+        min-height: 787px;
+    }
+
     header {
         padding-left: 20px;
         padding-right: 20px;
+        margin: 0 auto 77px auto;
     }
 
     .logo {
@@ -533,7 +542,7 @@ footer {
     .menu {
         float: none;
         margin-left: -4px;
-        margin-top: 36px;
+        margin-top: 34px;
     }
 
     .menu__item {
@@ -545,20 +554,31 @@ footer {
         padding-left: 44px;
     }
 
+    .slider__content {
+        padding-top: 98px;
+    }
+
     .slider__h1 {
         font-size: 48px;
     }
 
     .slider__h2 {
+        margin-top: 8px;
         font-size: 24px;
     }
 
     .slider__text {
         font-size: 16px;
+        line-height: 26px;
     }
 
     .slider__iphone {
-        margin-right: 50px;
+        margin: -23px 29px -22px 102px;
+    }
+
+    .points {
+        left: 72%;
+        bottom: -62px;
     }
 
     .slider__hidden,
@@ -575,12 +595,26 @@ footer {
     }
 
     .about__header {
+        margin-bottom: 5px;
         font-size: 24px;
+    }
+
+    .about__text {
+        margin-bottom: 7px;
+    }
+
+    .about__item--icon-message:before,
+    .about__item--icon-music:before {
+        background: url(../img/sprit.png) 0 0 no-repeat;
     }
 
     .posts {
         padding-left: 42px;
         padding-right: 20px;
+    }
+
+    .posts__wrapper-article {
+        margin-right: 7%;
     }
 
     .posts__header--size {
@@ -591,9 +625,33 @@ footer {
         display: block;
     }
 
+    .posts__hidden--media-768 {
+        display: none;
+    }
+
+    .posts__hidden--media-960 {
+        display: block;
+    }
+
+    .points--article {
+        left: 36%;
+        bottom: -46px;
+    }
+
+    .brands {
+        padding: 0;
+    }
+
+    .brands__img {
+        margin: 25px 2% 31px 0;
+    }
+
+    .brands__img--6-margin {
+        width: 9%;
+    }
+
     .news {
-        padding-left: 20px;
-        padding-right: 20px;
+        padding: 100px 20px 71px 20px;
     }
 
     .news__header {
@@ -624,7 +682,11 @@ footer {
 @media screen and (max-width: 480px) {
 
     .header-and-slider {
-        min-height: 703px;
+        min-height: 537px;
+    }
+
+    header {
+        margin: 0 auto 25px auto;
     }
 
     .logo {
@@ -639,7 +701,7 @@ footer {
         display: block;
         width: 40px;
         border-radius: 5px 5px 0 0;
-        margin: 40px auto;
+        margin: 23px auto;
         text-align: center;
     }
 
@@ -725,12 +787,21 @@ footer {
         min-height: 100%;
     }
 
+    .slider {
+        padding-left: 32px;
+    }
+
+    .slider__content {
+        padding-top: 93px;
+    }
+
     .slider__h1 {
         font-size: 36px;
     }
 
     .slider__h2 {
         font-size: 18px;
+        margin-top: 2px;
     }
 
     .slider__text {
@@ -738,7 +809,7 @@ footer {
     }
 
     .slider__iphone {
-        margin: -17px 13px -53px 7px;
+        margin: -8px 22px -53px 7px;
     }
 
     .slider__iphone img {
@@ -759,23 +830,47 @@ footer {
     .points {
         position: absolute;
         left: 42%;
-        bottom: -70px;
+        bottom: -39px;
     }
 
     /**********ABOUT**************/
+    .wrapper-about {
+        padding: 76px 0 44px 0;
+    }
+
+    .about {
+        padding-left: 75px;
+    }
+
     .about__item {
         width: 100%;
-        margin-bottom: 63px;
+        margin-bottom: 58px;
         float: none;
         position: relative;
     }
 
+    .about__more {
+        margin: 7px -3px 0 0;
+    }
+
     /**********POSTS**************/
+    .wrapper-posts {
+        padding: 67px 0 91px 0;
+    }
+
+    .posts {
+        padding-left: 34px;
+    }
+
     .posts__wrapper-article {
         width: 100%;
         float: none;
         margin-right: 0;
         position: relative;
+    }
+
+    .posts__header {
+        margin-bottom: 14px;
     }
 
     .posts__header--size {
@@ -790,11 +885,24 @@ footer {
         display: inline;
     }
 
+    .points--article {
+        left: 39%;
+        bottom: -38px;
+    }
+
     .posts__recent {
         width: 81%;
         float: none;
         padding: 0;
-        margin: 90px auto 0 auto;
+        margin: 86px auto 0 auto;
+    }
+
+    .posts__go-to-post {
+        margin: 19px 0;
+    }
+
+    .posts__more {
+        margin: -1px -9px 0 0;
     }
 
     /**********BRANDS**************/
@@ -814,6 +922,10 @@ footer {
     }
 
     /**********NEWS**************/
+    .news {
+        padding: 82px 20px 64px 20px;
+    }
+
     .news__copyright,
     .news__comments,
     .news__categories {
@@ -822,7 +934,7 @@ footer {
     }
 
     .news__comments--margin {
-        margin: 62px 0;
+        margin: 34px 0;
     }
 
     .news__hidden--show-media-480 {
@@ -847,7 +959,7 @@ footer {
 
     .footer__designed {
         float: none;
-        margin-top: 40px;
+        margin-top: 37px;
         text-align: center;
     }
 
@@ -860,11 +972,11 @@ footer {
 @media screen and (max-width: 320px) {
 
     .header-and-slider {
-        min-height: 523px;
+        min-height: 505px;
     }
 
     header {
-        margin-bottom: 40px;
+        margin-bottom: 25px;
     }
 
     /**********SLIDER**************/
@@ -877,12 +989,17 @@ footer {
     }
 
     .slider {
-        padding: 0 44px;
+        padding: 0 0 0 56px;
+    }
+
+    .points {
+        left: 37%;
+        bottom: -95px;
     }
 
     /**********ABOUT**************/
     .wrapper-about {
-        padding: 76px 0 32px 0;
+        padding: 70px 0 41px 0;
     }
 
     .about__hidden--media-320 {
@@ -890,12 +1007,30 @@ footer {
     }
 
     .about__item {
-        margin-bottom: 78px;
+        margin-bottom: 56px;
+    }
+
+    .about__item--margin {
+        margin-top: 72px;
     }
 
     /**********POSTS**************/
+    .wrapper-posts {
+        padding: 67px 0 87px 0;
+    }
+
+    .posts {
+        padding: 0 20px;
+    }
+
     .posts__article {
         margin-left: 20px;
+        padding: 27px 44px 11px 30px;
+    }
+
+    .posts__photo:before {
+        left: -29px;
+        top: 19px;
     }
 
     .posts__header--size {
@@ -906,25 +1041,33 @@ footer {
         display: block;
     }
 
+    .posts__header {
+        margin-bottom: 4px;
+    }
+
     .posts__hidden--media-320 {
         display: none;
     }
 
+    .points--article {
+        left: 41%;
+        bottom: -32px;
+    }
+
     .posts__recent {
         width: 100%;
-    }
-
-    .posts {
-        padding: 0 20px;
-    }
-
-    .posts__recent {
+        margin: 80px auto 0 auto;
         letter-spacing: -1px;
+    }
+
+    .posts__more {
+        margin: -2px 3px 0 0;
+        font-size: 20px;
     }
 
     /**********BRANDS**************/
     .brands {
-        padding: 0 60px;
+        padding: 8px 60px;
     }
 
     .brands__img {
@@ -938,8 +1081,13 @@ footer {
         margin-right: 0;
     }
 
+    .brands__img--6-margin {
+        margin-top: 7px;
+    }
+
     .brands__img--align img {
         margin-left: -23px;
+        margin-top: 0;
     }
 
     /**********NEWS**************/
@@ -949,7 +1097,7 @@ footer {
 
     /**********FOOTER**************/
     footer {
-        padding-top: 30px;
+        padding-top: 41px;
     }
 
     .wrapper-footer {
