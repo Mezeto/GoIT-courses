@@ -285,8 +285,8 @@ header {
     top: 19px;
 }
 
-.posts__ygolok{
-    margin: 2px 2px 0 0;
+.posts__ygolok:after {
+    content: url("../img/post_ygolok.png");
     position: absolute;
     right: 40px;
     bottom: -22px;
@@ -572,7 +572,7 @@ footer {
     .slider__hidden,
     .about__hidden,
     .posts__hidden,
-    .posts__ygolok,
+    .posts__ygolok:after,
     .news__hidden {
         display: none;
     }
@@ -1016,7 +1016,7 @@ footer {
         padding: 27px 44px 11px 30px;
     }
 
-    .posts__photo:before {
+    .posts__photo {
         left: -29px;
         top: 19px;
     }
