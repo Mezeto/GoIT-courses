@@ -421,6 +421,16 @@ header {
     margin: 0 6%;
 }
 
+.news__logo {
+    font: 48px 'League Gothic regular', Arial, sans-serif;
+    color: #454545;
+    text-transform: uppercase;
+}
+
+.news__logo span {
+    color: #b9b9b9;
+}
+
 .news__copy {
     margin: 18px 0 10px 0;
     font: 16px Georgia;
