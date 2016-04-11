@@ -279,8 +279,7 @@ header {
     background: #fff;
 }
 
-.posts__photo:before {
-    content: url("../img/post_photo.png");
+.posts__photo {
     position: absolute;
     left: -24px;
     top: 19px;
@@ -346,20 +345,9 @@ header {
     margin-top: 15px;
 }
 
-.posts__some-photo1:before {
-    content: url("../img/post_some_photo1.png");
-    margin: 0 11px 0 0;
-    float: left;
-}
-
-.posts__some-photo2:before {
-    content: url("../img/post_some_photo2.png");
-    margin: 0 10px 0 0;
-    float: left;
-}
-
-.posts__some-photo3:before {
-    content: url("../img/post_some_photo3.png");
+.posts__some-photo1,
+.posts__some-photo2,
+.posts__some-photo3 {
     margin: 0 10px 0 0;
     float: left;
 }
