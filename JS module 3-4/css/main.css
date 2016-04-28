@@ -1,0 +1,32 @@
+* {
+    font-family: Arial, sans-serif;
+}
+
+h2 {
+    font-size: 20px;
+}
+
+li {
+    list-style: none;
+}
+
+input[type=checkbox],
+input[type=radio]    {
+    margin: 4px 6px;
+}
+
+.wrapper {
+    width: 700px;
+    margin: 0 auto;
+}
+
+h1 {
+    margin-bottom: 47px;
+    font-size: 30px;
+    text-align: center;
+}
+
+input[type=submit] {
+    display: block;
+    margin: 40px auto;
+}
