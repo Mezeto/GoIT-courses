@@ -1,0 +1,13 @@
+h1 {
+    font-size: 200px;
+}
+
+span {
+    font-size: 50px;
+}
+
+.start,
+.clean {
+    padding: 18px 34px;
+    font-size: 22px;
+}
