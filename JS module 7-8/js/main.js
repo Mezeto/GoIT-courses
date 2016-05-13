@@ -2,18 +2,17 @@ $(function () {
     //************* TABS ***************
     var $tabs = $('.tabs');
 
-
     $tabs.on('click', function (e) {
-        var $li1 = $('.tabs__li-tab-1');
-        var $li2 = $('.tabs__li-tab-2');
-        var $li3 = $('.tabs__li-tab-3');
+        var $li1 = $('#tabs__li-tab-1');
+        var $li2 = $('#tabs__li-tab-2');
+        var $li3 = $('#tabs__li-tab-3');
 
         var $div1 = $('.tabs__div-tab-1');
         var $div2 = $('.tabs__div-tab-2');
         var $div3 = $('.tabs__div-tab-3');
 
-        var target = e.target.className;
-        target = '.' + target;
+        var target = e.target.id;
+        target = '#' + target;
 
         // Первый ТАБ
         if (target == $li1.selector) {
@@ -21,24 +20,10 @@ $(function () {
             $div2.hide();
             $div1.show();
 
-            $li3.css({
-                border: '',
-                borderBottom: '',
-                marginBottom: '',
-                paddingTop: ''
-            });
-            $li2.css({
-                border: '',
-                borderBottom: '',
-                marginBottom: '',
-                paddingTop: ''
-            });
-            $li1.css({
-                border: '2px solid #12bf0d',
-                borderBottom: '2px solid #fff',
-                marginBottom: '-1px',
-                paddingTop: '3px'
-            });
+            $li3.removeClass('tabs__li-tab-1--click');
+            $li2.removeClass('tabs__li-tab-1--click');
+            $li1.removeClass('tabs__li-tab-1--default');
+            $li1.addClass('tabs__li-tab-1--click');
 
            return;
         }
@@ -49,24 +34,10 @@ $(function () {
             $div3.hide();
             $div2.show();
 
-            $li1.css({
-                border: '1px solid #ccc',
-                borderBottom: '2px solid #12bf0d',
-                marginBottom: '30px 0 0 15px',
-                paddingTop: '4px 36px'
-            });
-            $li3.css({
-                border: '',
-                borderBottom: '',
-                marginBottom: '',
-                paddingTop: ''
-            });
-            $li2.css({
-                border: '2px solid #12bf0d',
-                borderBottom: '2px solid #fff',
-                marginBottom: '-1px',
-                paddingTop: '3px'
-            });
+            $li1.removeClass('tabs__li-tab-1--click');
+            $li1.removeClass('tabs__li-tab-1--default');
+            $li3.removeClass('tabs__li-tab-1--click');
+            $li2.addClass('tabs__li-tab-1--click');
 
             return;
         }
@@ -77,24 +48,10 @@ $(function () {
             $div2.hide();
             $div3.show();
 
-            $li1.css({
-                border: '1px solid #ccc',
-                borderBottom: '2px solid #12bf0d',
-                marginBottom: '30px 0 0 15px',
-                paddingTop: '4px 36px'
-            });
-            $li2.css({
-                border: '',
-                borderBottom: '',
-                marginBottom: '',
-                paddingTop: ''
-            });
-            $li3.css({
-                border: '2px solid #12bf0d',
-                borderBottom: '2px solid #fff',
-                marginBottom: '-1px',
-                paddingTop: '3px'
-            });
+            $li1.removeClass('tabs__li-tab-1--click');
+            $li1.removeClass('tabs__li-tab-1--default');
+            $li2.removeClass('tabs__li-tab-1--click');
+            $li3.addClass('tabs__li-tab-1--click');
         }
     });
 
@@ -171,5 +128,3 @@ $(function () {
 
     });
 });//ready;
-
-

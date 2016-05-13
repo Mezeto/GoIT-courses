@@ -35,11 +35,20 @@ li {
     cursor: pointer;
 }
 
-.tabs__li-tab-1 {
+.tabs__li-tab-1--default {
     border: 2px solid #12bf0d;
     border-bottom: 2px solid #fff;
     margin-bottom: -1px;
 }
+
+/********** При клике на таб ****************/
+.tabs__li-tab-1--click {
+    border: 2px solid #12bf0d;
+    border-Bottom: 2px solid #fff;
+    margin-Bottom: -1px;
+    padding-Top: 3px;
+}
+/**************************/
 
 .tabs__content {
     padding: 10px;
