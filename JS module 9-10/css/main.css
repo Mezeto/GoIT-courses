@@ -1,0 +1,171 @@
+.slider img {
+    width: 20%;
+    padding: 0;
+    margin: 0;
+    line-height: 0;
+}
+.slider {
+    width: 377px;
+    margin: 0 auto;
+    padding: 0 64px;
+    position: relative;
+}
+
+.jcarousel {
+    position: relative;
+    overflow: hidden;
+    height: 240px;
+    border: 3px solid green;
+}
+
+.jcarousel ul {
+    width: 20000em;
+    position: relative;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.jcarousel li {
+    float: left;
+}
+
+.jcarousel-prev {
+    position: absolute;
+    left: 15px;
+    top: 91px;
+}
+
+.jcarousel-next {
+    position: absolute;
+    right: 15px;
+    top: 91px;
+}
+
+.jcarousel-prev img,
+.jcarousel-next img {
+    width: 30px;
+}
+
+/*custom selects*/
+.wrap-custom-select {
+    margin: 20px;
+}
+
+.custom-select {
+    width: 248px;
+}
+
+.option {
+    width: 200px;
+}
+
+/*custom checkbox on CSS*/
+.custom-checkbox-css {
+    padding: 8px;
+    border: 1px solid #ccc;
+    position: absolute;
+    right: 20px;
+    top: 100px;
+}
+
+.custom-checkbox-css p {
+    font-size: 20px;
+    font-style: italic;
+}
+
+.custom-checkbox-css input[type=checkbox] {
+    position: absolute;
+    clip: rect(0, 0, 0, 0);
+}
+.custom-checkbox-css label {
+    display: block;
+    cursor: pointer;
+}
+.custom-checkbox-css label:after {
+    content: " ";
+    display: inline-block;
+    width: 20px;
+    height: 19px;
+    background: url(../img/checkbox-img.png) -20px 0 no-repeat;
+    position: relative;
+    top: 3px;
+    margin-left: 15px;
+}
+.custom-checkbox-css input[type=checkbox]:checked + label:after {
+    background-position: 0 0;
+}
+
+/*custom checkbox on JS*/
+.custom-checkbox-js {
+    padding: 8px;
+    border: 1px solid #ccc;
+    position: absolute;
+    left: 20px;
+    top: 200px;
+}
+
+.custom-checkbox-js p {
+    font-size: 20px;
+    font-style: italic;
+}
+
+.custom-checkbox-js label {
+    display: block;
+}
+
+.custom-checkbox-js label:nth-child(6)  {
+    margin-top: 15px;
+}
+
+
+
+/*li {*/
+    /*list-style: none;*/
+/*}*/
+
+/*.menu {*/
+    /*background: #ccc;*/
+/*}*/
+
+/*.menu li a,*/
+/*.sub-menu li a,*/
+/*.sub2-menu li a {*/
+    /*display: block;*/
+    /*padding: 15px;*/
+    /*text-decoration: none;*/
+/*}*/
+
+/*.menu li {*/
+    /*margin: 0 5px;*/
+    /*float: left;*/
+    /*position: relative;*/
+    /*background: #000;*/
+/*}*/
+
+/*.sub-menu {*/
+    /*!*display: none;*!*/
+    /*position: absolute;*/
+/*}*/
+
+/*.sub-menu li {*/
+    /*margin-left: 0;*/
+    /*width: 100%;*/
+    /*float: none;*/
+/*}*/
+
+/*.sub2-menu {*/
+    /*width: 100%;*/
+    /*position: absolute;*/
+    /*left: 100%;*/
+    /*top: 0;*/
+    /*!*display: none;*!*/
+/*}*/
+
+/*.sub2-menu li {*/
+    /*background: green;*/
+/*}*/
+
+/*li:hover > ul {*/
+    /*display: block;*/
+/*}*/
