@@ -153,7 +153,7 @@ li {
 
 .sub-menu {
     display: none;
-    background: #E14B4B;
+    background: #FF6464;
     position: absolute;
 }
 
@@ -172,7 +172,7 @@ li {
 .sub3-menu {
     display: none;
     width: 100%;
-    background: #E14B4B;
+    background: #FF6464;
     position: absolute;
     left: 100%;
     top: 0;

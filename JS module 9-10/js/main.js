@@ -28,10 +28,17 @@ $(function () {
     $navLi.hover(function () {
         if ($(this).find('ul').eq(0)) {
             $(this).find('ul').eq(0).slideDown(200)
+                                    .animate({
+                                        backgroundColor : '#E14B4B'
+                                    }, 500);
+
         }
     }, function () {
         if ($(this).find('ul').eq(0)) {
             $(this).find('ul').eq(0).slideUp(200)
+                                    .animate({
+                                        backgroundColor : '#FF6464'
+                                    }, 500);
         }
     });
 
