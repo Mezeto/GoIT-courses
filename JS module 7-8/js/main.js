@@ -1,58 +1,15 @@
 $(function () {
     //************* TABS ***************
-    var $tabs = $('.tabs');
+    var $tabs = $('.tabs > ul > li > span');
 
-    $tabs.on('click', function (e) {
-        var $li1 = $('#tabs__li-tab-1');
-        var $li2 = $('#tabs__li-tab-2');
-        var $li3 = $('#tabs__li-tab-3');
+    $tabs.eq(0).addClass('active');
+    $tabs.next().eq(0).show();
 
-        var $div1 = $('.tabs__div-tab-1');
-        var $div2 = $('.tabs__div-tab-2');
-        var $div3 = $('.tabs__div-tab-3');
-
-        var target = e.target.id;
-        target = '#' + target;
-
-        // Первый ТАБ
-        if (target == $li1.selector) {
-            $div3.hide();
-            $div2.hide();
-            $div1.show();
-
-            $li3.removeClass('tabs__li-tab-1--click');
-            $li2.removeClass('tabs__li-tab-1--click');
-            $li1.removeClass('tabs__li-tab-1--default');
-            $li1.addClass('tabs__li-tab-1--click');
-
-           return;
-        }
-
-        // Второй ТАБ
-        if (target == $li2.selector) {
-            $div1.hide();
-            $div3.hide();
-            $div2.show();
-
-            $li1.removeClass('tabs__li-tab-1--click');
-            $li1.removeClass('tabs__li-tab-1--default');
-            $li3.removeClass('tabs__li-tab-1--click');
-            $li2.addClass('tabs__li-tab-1--click');
-
-            return;
-        }
-
-        // Третий ТАБ
-        if (target == $li3.selector) {
-            $div1.hide();
-            $div2.hide();
-            $div3.show();
-
-            $li1.removeClass('tabs__li-tab-1--click');
-            $li1.removeClass('tabs__li-tab-1--default');
-            $li2.removeClass('tabs__li-tab-1--click');
-            $li3.addClass('tabs__li-tab-1--click');
-        }
+    $tabs.on('click', function () {
+        $tabs.removeClass('active');
+        $(this).addClass('active');
+        $tabs.next().hide();
+        $(this).next().show();
     });
 
     //*********** FORM **************
