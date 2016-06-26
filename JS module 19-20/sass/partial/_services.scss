@@ -1,0 +1,44 @@
+.services {
+	padding-top: 46px;
+	background: #2a2d32;
+	.wrap {
+		@extend .wrapper;
+	}
+	.title {
+		margin-bottom: 55px;
+		font: 24px Ubuntu, Arial, sans-serif;
+		color: #fff;
+	}
+}
+
+.service-item {
+	width: 260px;
+	margin: 0 0 70px 40px;
+	text-align: center;
+	float: left;
+	&__img {
+		display: block;
+		margin-bottom: 30px;
+		position: relative;
+	}
+	&__link {
+		font: 16px Ubuntu, Arial, sans-serif;
+		color: #fff;
+		&:hover {
+			color: #f4b60d;
+		}
+	}
+	&--margin {
+		margin-left: 0;
+	}
+}
+
+.overlay:before {
+	display: block;
+	width: 10%;
+	height: 10%;
+	content: url("../../img/plus.png");
+	background: rgba(36, 140, 236, 0.9);
+	position: absolute;
+	padding: 45%;
+}

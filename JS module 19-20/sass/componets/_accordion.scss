@@ -1,0 +1,67 @@
+.accordion {
+	width: 560px;
+	float: right;
+	h3 {
+		font: 13px Ubuntu, Arial, sans-serif;
+		text-transform: uppercase;
+		position: relative;
+	}
+	p {
+		font: 13px Arial, sans-serif;
+		color: #8a8a8a;
+	}
+}
+
+//* кастомизация jQuery-UI аккордиона {
+.ui-state-default {
+	border: 1px solid #c5c5c5;
+	background: #fff;
+}
+
+.ui-state-active {
+	border: 1px solid #f4b60d;
+	background: #f4b60d;
+}
+
+.ui-corner-all, .ui-corner-bottom {
+	border-radius: 0;
+}
+
+.ui-corner-top {
+	border-radius: 0;
+}
+
+.ui-icon-triangle-1-s {
+	background-position: -49px -129px;
+}
+
+.ui-icon-triangle-1-e {
+	background-position: -16px -129px;
+}
+
+.ui-icon {
+	margin-right: 19px;
+}
+%accordion-border {
+	display: block;
+	height: 34px;
+	content: ' ';
+	position: absolute;
+	left: 34px;
+	top: 0;
+}
+
+.accordion h3[class*=ui-state-default]:before {
+	@extend %accordion-border;
+	border-right: 2px solid #c5c5c5;
+}
+
+.accordion h3[class*=ui-state-active]:before {
+	@extend %accordion-border;
+	border-right: 1px solid #fff;
+}
+
+.ui-accordion .ui-accordion-content {
+	padding: 2em 2.2em;
+}
+//* кастомизация jQuery-UI аккордиона }

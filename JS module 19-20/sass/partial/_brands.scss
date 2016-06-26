@@ -1,0 +1,15 @@
+.brands {
+	padding: 98px 0 100px 0;
+	background: #fff;
+	.wrap {
+		@extend .wrapper;
+		text-align: center;
+	}
+	.brand-img {
+		display: inline-block;
+		margin-left: 39px;
+		&:first-child {
+			margin-left: 0;
+		}
+	}
+}

@@ -41,6 +41,22 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
+.clearfix:after, .clearfix:before {
+  content: ' ';
+  display: block;
+  clear: both; }
+
+h3 {
+  outline: none; }
+
+a {
+  text-decoration: none; }
+
+.wrapper, .services .wrap, .news .wrap, .brands .wrap, .footer .wrap, .footer-bottom .wrap {
+  max-width: 1162px;
+  padding: 0 40px;
+  margin: 0 auto; }
+
 /*! jQuery UI - v1.12.0-rc.2 - 2016-05-23
 * http://jqueryui.com
 * Includes: draggable.css, core.css, resizable.css, selectable.css, sortable.css, accordion.css, autocomplete.css, menu.css, button.css, controlgroup.css, checkboxradio.css, datepicker.css, dialog.css, progressbar.css, selectmenu.css, slider.css, spinner.css, tabs.css, tooltip.css, theme.css
@@ -959,25 +975,25 @@ body .ui-tooltip {
   height: 16px; }
 
 .ui-icon, .ui-widget-content .ui-icon {
-  background-image: url("../../img/ui-icons_444444_256x240.png"); }
+  background-image: url("../img/ui-icons_444444_256x240.png"); }
 
 .ui-widget-header .ui-icon {
-  background-image: url("../../img/ui-icons_444444_256x240.png"); }
+  background-image: url("../img/ui-icons_444444_256x240.png"); }
 
 .ui-button .ui-icon {
-  background-image: url("../../img/ui-icons_777777_256x240.png"); }
+  background-image: url("../img/ui-icons_777777_256x240.png"); }
 
 .ui-state-hover .ui-icon, .ui-state-focus .ui-icon, .ui-button:hover .ui-icon, .ui-button:focus .ui-icon, .ui-state-default .ui-icon {
-  background-image: url("../../img/ui-icons_555555_256x240.png"); }
+  background-image: url("../img/ui-icons_555555_256x240.png"); }
 
 .ui-state-active .ui-icon, .ui-button:active .ui-icon {
-  background-image: url("../../img/ui-icons_ffffff_256x240.png"); }
+  background-image: url("../img/ui-icons_ffffff_256x240.png"); }
 
 .ui-state-highlight .ui-icon, .ui-button .ui-state-highlight.ui-icon {
-  background-image: url("../../img/ui-icons_777620_256x240.png"); }
+  background-image: url("../img/ui-icons_777620_256x240.png"); }
 
 .ui-state-error .ui-icon, .ui-state-error-text .ui-icon {
-  background-image: url("../../img/ui-icons_cc0000_256x240.png"); }
+  background-image: url("../img/ui-icons_cc0000_256x240.png"); }
 
 .ui-icon-blank {
   background-position: 16px 16px; }
@@ -1529,22 +1545,6 @@ body .ui-tooltip {
   -webkit-box-shadow: 0 0 5px #666;
   box-shadow: 0 0 5px #666; }
 
-.clearfix:after, .clearfix:before {
-  content: ' ';
-  display: block;
-  clear: both; }
-
-h3 {
-  outline: none; }
-
-a {
-  text-decoration: none; }
-
-.wrapper, .services .wrap, .news .wrap, .brands .wrap, .footer .wrap, .footer-bottom .wrap {
-  max-width: 1162px;
-  padding: 0 40px;
-  margin: 0 auto; }
-
 .header {
   padding-top: 36px;
   margin-bottom: 70px; }
@@ -1606,8 +1606,8 @@ a {
     right: 14px;
     top: 10px; }
 
-.slider {
-  position: relative; }
+.advantages {
+  margin-bottom: 86px; }
 
 .advantages-item__wrap--power:before, .advantages-item__wrap--technologies:before, .advantages-item__wrap--support:before {
   display: block;
@@ -1622,9 +1622,6 @@ a {
 
 .advantages-item__wrap--support:before {
   content: url("../img/support.png"); }
-
-.advantages {
-  margin-bottom: 86px; }
 
 .advantages-item {
   float: left; }
@@ -1687,7 +1684,7 @@ a {
   display: block;
   width: 10%;
   height: 10%;
-  content: url("../img/plus.png");
+  content: url("../../img/plus.png");
   background: rgba(36, 140, 236, 0.9);
   position: absolute;
   padding: 45%; }
@@ -1746,59 +1743,6 @@ a {
   .article__text {
     color: #8a8a8a; }
 
-.accordion {
-  width: 560px;
-  float: right; }
-  .accordion h3 {
-    font: 13px Ubuntu, Arial, sans-serif;
-    text-transform: uppercase;
-    position: relative; }
-  .accordion p {
-    font: 13px Arial, sans-serif;
-    color: #8a8a8a; }
-
-.ui-state-default {
-  border: 1px solid #c5c5c5;
-  background: #fff; }
-
-.ui-state-active {
-  border: 1px solid #f4b60d;
-  background: #f4b60d; }
-
-.ui-corner-all, .ui-corner-bottom {
-  -webkit-border-radius: 0;
-          border-radius: 0; }
-
-.ui-corner-top {
-  -webkit-border-radius: 0;
-          border-radius: 0; }
-
-.ui-icon-triangle-1-s {
-  background-position: -49px -129px; }
-
-.ui-icon-triangle-1-e {
-  background-position: -16px -129px; }
-
-.ui-icon {
-  margin-right: 19px; }
-
-.accordion h3[class*=ui-state-default]:before, .accordion h3[class*=ui-state-active]:before {
-  display: block;
-  height: 34px;
-  content: ' ';
-  position: absolute;
-  left: 34px;
-  top: 0; }
-
-.accordion h3[class*=ui-state-default]:before {
-  border-right: 2px solid #c5c5c5; }
-
-.accordion h3[class*=ui-state-active]:before {
-  border-right: 1px solid #fff; }
-
-.ui-accordion .ui-accordion-content {
-  padding: 2em 2.2em; }
-
 .brands {
   padding: 98px 0 100px 0;
   background: #fff; }
@@ -1853,6 +1797,9 @@ a {
   .footer-bottom__copyright {
     margin-right: 0;
     float: right; }
+
+.slider {
+  position: relative; }
 
 .jcarousel {
   position: relative;
@@ -1930,3 +1877,56 @@ a {
   color: #fff;
   opacity: 1;
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.75); }
+
+.accordion {
+  width: 560px;
+  float: right; }
+  .accordion h3 {
+    font: 13px Ubuntu, Arial, sans-serif;
+    text-transform: uppercase;
+    position: relative; }
+  .accordion p {
+    font: 13px Arial, sans-serif;
+    color: #8a8a8a; }
+
+.ui-state-default {
+  border: 1px solid #c5c5c5;
+  background: #fff; }
+
+.ui-state-active {
+  border: 1px solid #f4b60d;
+  background: #f4b60d; }
+
+.ui-corner-all, .ui-corner-bottom {
+  -webkit-border-radius: 0;
+          border-radius: 0; }
+
+.ui-corner-top {
+  -webkit-border-radius: 0;
+          border-radius: 0; }
+
+.ui-icon-triangle-1-s {
+  background-position: -49px -129px; }
+
+.ui-icon-triangle-1-e {
+  background-position: -16px -129px; }
+
+.ui-icon {
+  margin-right: 19px; }
+
+.accordion h3[class*=ui-state-default]:before, .accordion h3[class*=ui-state-active]:before {
+  display: block;
+  height: 34px;
+  content: ' ';
+  position: absolute;
+  left: 34px;
+  top: 0; }
+
+.accordion h3[class*=ui-state-default]:before {
+  border-right: 2px solid #c5c5c5; }
+
+.accordion h3[class*=ui-state-active]:before {
+  border-right: 1px solid #fff; }
+
+.ui-accordion .ui-accordion-content {
+  padding: 2em 2.2em; }

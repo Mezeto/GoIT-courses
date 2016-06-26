@@ -1,0 +1,65 @@
+.advantages {
+	margin-bottom: 86px;
+}
+
+%icon-advantages {
+	display: block;
+	width: 32px;
+	height: 32px;
+}
+
+.advantages-item__wrap {
+	&--power:before {
+		@extend %icon-advantages;
+		content: url("../img/power.png");
+	}
+	&--technologies:before {
+		@extend %icon-advantages;
+		content: url("../img/technologies.png");
+	}
+	&--support:before {
+		@extend %icon-advantages;
+		content: url("../img/support.png");
+	}
+}
+
+.advantages-item {
+	float: left;
+	&__number {
+		display: block;
+		width: 93px;
+		font: 90px Ubuntu, Arial, sans-serif;
+		color: #2a2b2e;
+		opacity: 0.10;
+		float: left;
+	}
+	&__wrap {
+		width: 245px;
+		padding: 22px 0 0 30px;
+		float: right;
+	}
+	&__title {
+		margin: 17px 0 25px 0;
+		font: 20px Ubuntu, Arial, sans-serif;
+		color: #2a2b2e;
+	}
+	&__text {
+		margin-bottom: 25px;
+		font: 13px Arial, sans-serif;
+		color: #8a8a8a;
+	}
+	&__link {
+		font: 13px Ubuntu, Arial, sans-serif;
+		color: #2a2b2e;
+		&:hover {
+			color: #248cec;
+		}
+		span {
+			color: #248cec;
+		}
+	}
+}
+
+.advantages-item--margin {
+	margin: 0 25px;
+}

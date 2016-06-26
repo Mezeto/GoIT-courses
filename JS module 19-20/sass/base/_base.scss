@@ -1,0 +1,22 @@
+.clearfix {
+	&:after,
+	&:before {
+		content: ' ';
+		display: block;
+		clear: both;
+	}
+}
+
+h3 {
+	outline: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+.wrapper {
+	max-width: 1162px;
+	padding: 0 40px;
+	margin: 0 auto;
+}
