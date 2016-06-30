@@ -1,12 +1,16 @@
 var gulp         = require('gulp'), 
     autoprefixer = require('gulp-autoprefixer'),
     sass         = require('gulp-sass'),
-    browserSync  = require('browser-sync');
+    browserSync  = require('browser-sync'),
+    sourcemaps   = require('gulp-sourcemaps');
+
 
 gulp.task('sass', function () {
     return gulp.src('sass/*.scss')
+    	.pipe(sourcemaps.init())
         .pipe(sass())
         .pipe(autoprefixer(['last 15 versions', '> 1%', 'ie 8', 'ie 7']))
+        .pipe(sourcemaps.write('./'))
         .pipe(gulp.dest('css/'))
         .pipe(browserSync.reload({stream: true}));
 });
