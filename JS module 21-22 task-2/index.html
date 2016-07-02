@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Module 13-14</title>
+	<!--<link rel="stylesheet" href="css/reset.css">-->
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	<!--<script src="js/jquery-ui.min.js"></script>-->
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/tmpl.js"></script>
+	<script src="js/script.js"></script>
+</head>
+<body>
+
+<div class="wrapper">
+	<script type="text/tmpl" id="tests">
+        <h1>Тест по программированию</h1>
+        <form>
+            <div class="question-1"><h2 class="question-1__title"><%= question1 %></h2>
+                <ul class="question-1__ul">
+                    <li class="question-1__answer-1"><input type="radio" name="question-1"><%= answer1_1 %></li>
+                    <li class="question-1__answer-2"><input type="radio" name="question-1" value="4"><%= answer1_2 %></li>
+                    <li class="question-1__answer-3"><input type="radio" name="question-1"><%= answer1_3 %></li>
+                </ul>
+            </div>
+            <div class="question-2"><h2 class="question-2__title"><%= question2 %></h2>
+                <ul class="question-2__ul">
+                    <li class="question-2__answer-1"><input type="radio" name="question-2"><%= answer2_1 %></li>
+                    <li class="question-2__answer-2"><input type="radio" name="question-2"><%= answer2_2 %></li>
+                    <li class="question-2__answer-3"><input type="radio" name="question-2" value="12"><%= answer2_3 %></li>
+                </ul>
+            </div>
+            <div class="question-3"><h2 class="question-3__title"><%= question3 %></h2>
+                <ul class="question-3__ul">
+                    <li class="question-3__answer-1"><input type="radio" name="question-3" value="5"><%= answer3_1 %></li>
+                    <li class="question-3__answer-2"><input type="radio" name="question-3"><%= answer3_2 %></li>
+                    <li class="question-3__answer-3"><input type="radio" name="question-3"><%= answer3_3 %></li>
+                </ul>
+            </div>
+            <input type="button" value="Проверить мои результаты" class="btn btn-primary" id="btn">
+        </form>
+        <div class="overlay"></div>
+        <div class="module-window">
+            <h4 class="module-window__question">Вопрос № 1</h4>
+            <p class="checkAnswer1"></p>
+            <h4 class="module-window__question">Вопрос № 2</h4>
+            <p class="checkAnswer2"></p>
+            <h4 class="module-window__question">Вопрос № 3</h4>
+            <p class="checkAnswer3"></p>
+            <input type="button" value="Пройти тест еще раз/Закрыть" class="module-window__btn btn btn-primary">
+        </div>
+
+	</script>
+
+</div>
+
+
+</body>
+</html>
