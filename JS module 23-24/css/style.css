@@ -4,11 +4,49 @@
 	font: 28px Arial, sans-serif;
 }
 
+.todo-list p {
+	font-size: 10px;
+	text-align: center;
+}
+
+.todo-list__list {
+	border: 1px solid #b1bcc0;
+}
+
+.todo-list__item-wrap {
+	border-top: 1px solid #b1bcc0;
+	position: relative;
+}
+
+.todo-list__item-wrap:first-child {
+	border-top: none;
+}
+
+.todo-list__item {
+	padding: 3px;
+}
+
 .todo-list__item span {
-	display: inline-block;
-	margin-left: 7px;
+	margin: 7px;
 	font-size: 16px;
 	color: darkred;
-	vertical-align: text-top;
 	cursor: pointer;
+	float: right;
+}
+
+.todo-list__edit {
+	display: none;
+}
+
+.todo-list__field-edit {
+	display: block;
+	width: 494px;
+	font: 28px Arial, sans-serif;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+
+.todo-list__btn-edit {
+	display: none;
 }

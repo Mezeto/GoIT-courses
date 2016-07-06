@@ -15,15 +15,26 @@
 
 <script type="text/tmpl" id="tmpl-todo-list-wrap">
 	<div class="todo-list">
+		<p>Дабл-клик для редактирования</p>
 		<ul class="todo-list__list"></ul>
-		<input type="text" class="todo-list__field">
-		<button class="todo-list__btn">Добавить</button>
+		<form action="#">
+			<input type="text" class="todo-list__field">
+			<button class="todo-list__btn">Добавить</button>
+		</form>
 	</div>
 </script>
 
 <script type="text/tmpl" id="tmpl-todo-list-item">
 	<% for (var i = 0; i < data.length; i++) { %>
-		<li class="todo-list__item"><%= data[i] %><span data-value="<%= data[i] %>" class="todo-list__delete fa fa-close"></span></li>
+		<div class="todo-list__item-wrap">
+			<li class="todo-list__item"><%= data[i] %><span data-value="<%= data[i] %>" class="todo-list__delete fa fa-close"></span></li>
+			<div class="todo-list__edit">
+				<form action="#">
+					<input type="text" class="todo-list__field-edit" value="<%= data[i] %>">
+					<button class="todo-list__btn-edit">Изменить</button>
+				</form>
+			</div>
+		</div>
 	<% } %>
 </script>
 
