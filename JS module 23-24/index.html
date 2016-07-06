@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Module 23-24</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="js/tmpl.js"></script>
+	<script src="js/script.js"></script>
+</head>
+<body>
+
+
+<script type="text/tmpl" id="tmpl-todo-list-wrap">
+	<div class="todo-list">
+		<ul class="todo-list__list"></ul>
+		<input type="text" class="todo-list__field">
+		<button class="todo-list__btn">Добавить</button>
+	</div>
+</script>
+
+<script type="text/tmpl" id="tmpl-todo-list-item">
+	<% for (var i = 0; i < data.length; i++) { %>
+		<li class="todo-list__item"><%= data[i] %><span data-value="<%= data[i] %>" class="todo-list__delete fa fa-close"></span></li>
+	<% } %>
+</script>
+
+
+
+</body>
+</html>
