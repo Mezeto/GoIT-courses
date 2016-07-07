@@ -10,7 +10,7 @@ require.config({
 });
 
 require(
-	['jQuery', 'model', 'View', 'Controller'],
+	['jQuery', 'Model', 'View', 'Controller'],
 	function ($, Model, View, Controller) {
 
 		$(function () {
