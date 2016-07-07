@@ -48,19 +48,19 @@ function View (model) {
 		self.elements.listContainer.html(content);
 	};
 
-	self.showEditor = function showEditor () {
-		$('.todo-list__edit').hide();
-		$(this).next().show()
-				.find('input').focus();
-	};
-
 	init();
 
 	self.showEditor = function (that) {
 		$('.todo-list__edit').hide();
 		$(that).next().show()
 				.find('input').focus();
-	}
+	};
+
+	self.closeEditor = function  (e) {
+		if (!$(e.target).hasClass('todo-list__field-edit')) {
+			$('.todo-list__edit').hide();
+		}
+	};
 }
 
 function Controller (model, view) {
@@ -68,7 +68,7 @@ function Controller (model, view) {
 	view.elements.listContainer.on('click', '.todo-list__delete', removeItem);
 	view.elements.listContainer.on('dblclick', '.todo-list__item', showEditor);
 	view.elements.listContainer.on('click', '.todo-list__btn-edit', editItem);
-	$('html').on('click', closeEditor);
+	$('html').on('click', view.closeEditor);
 
 	var currentItem;
 
@@ -86,12 +86,6 @@ function Controller (model, view) {
 		currentItem = $(this).find('span').attr('data-value');
 
 		view.showEditor(this);
-	}
-
-	function closeEditor () {
-		if (this !== $('.todo-list__edit')) {
-			$('.todo-list__edit').hide();
-		}
 	}
 
 	function addItem (e) {

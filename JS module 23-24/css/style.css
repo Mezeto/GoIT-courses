@@ -11,6 +11,9 @@
 
 .todo-list__list {
 	border: 1px solid #b1bcc0;
+	-webkit-box-shadow:  0 0 10px #ccc;
+	-moz-box-shadow:  0 0 10px #ccc;
+	box-shadow:  0 0 10px #ccc;
 }
 
 .todo-list__item-wrap {
