@@ -1,5 +1,5 @@
 define(
-	 "Model",
+	 "мodel",
 	 ['jQuery'],
 	 function ($) {
 
