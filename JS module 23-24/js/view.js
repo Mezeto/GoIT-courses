@@ -1,5 +1,5 @@
 define(
-	 "View",
+	 "view",
 	 ['jQuery'],
 	 function ($) {
 
