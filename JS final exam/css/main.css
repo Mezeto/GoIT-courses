@@ -1,0 +1,303 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+@font-face {
+  font-family: 'Roboto Light';
+  src: url("../fonts/Roboto-Light-Regular/roboto-light-webfont.eot");
+  src: url("../fonts/Roboto-Light-Regular/roboto-light-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/Roboto-Light-Regular/roboto-light-webfont.woff2") format("woff2"), url("../fonts/Roboto-Light-Regular/roboto-light-webfont.woff") format("woff"), url("../fonts/Roboto-Light-Regular/roboto-light-webfont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url("../fonts/Montserrat-Regular/montserrat-regular-webfont.eot");
+  src: url("../fonts/Montserrat-Regular/montserrat-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/Montserrat-Regular/montserrat-regular-webfont.woff2") format("woff2"), url("../fonts/Montserrat-Regular/montserrat-regular-webfont.woff") format("woff"), url("../fonts/Montserrat-Regular/montserrat-regular-webfont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url("../fonts/Montserrat-Bold/montserrat-bold-webfont.eot");
+  src: url("../fonts/Montserrat-Bold/montserrat-bold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/Montserrat-Bold/montserrat-bold-webfont.woff2") format("woff2"), url("../fonts/Montserrat-Bold/montserrat-bold-webfont.woff") format("woff"), url("../fonts/Montserrat-Bold/montserrat-bold-webfont.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal; }
+
+.clearfix:after {
+  content: ' ';
+  display: block;
+  clear: both; }
+
+a {
+  text-decoration: none; }
+
+h2 {
+  font: 22px Montserrat, Arial, sans-serif;
+  color: #333;
+  font-weight: bold; }
+
+.header .btn-search-partner, .search-partner__btn {
+  display: block;
+  width: 280px;
+  padding: 11px 0;
+  -webkit-border-radius: 20px;
+          border-radius: 20px;
+  margin: 0 auto;
+  background: #ff4e50;
+  font: 14px Montserrat, Arial, sans-serif;
+  color: #fff;
+  font-weight: bold; }
+
+.header {
+  min-height: 540px;
+  min-width: 280px;
+  padding: 32px 20px 67px 20px;
+  background: #cccccc url(../img/bg_header.jpg) center no-repeat;
+  background-size: cover;
+  text-align: center; }
+
+.login {
+  width: 168px;
+  margin: 0 auto; }
+  .login__link {
+    margin-right: 18px;
+    font: 14px Montserrat, Arial, sans-serif;
+    color: #fff;
+    font-weight: bold;
+    float: left; }
+    .login__link--border {
+      margin-top: -12px;
+      padding: 8px 15px;
+      border: 2px solid #fff;
+      -webkit-border-radius: 20px;
+              border-radius: 20px; }
+
+.logo {
+  margin-top: 120px; }
+  .logo a {
+    font: 20px Montserrat, Arial, sans-serif;
+    color: #fff;
+    font-weight: bold; }
+
+.title {
+  margin-top: 38px;
+  font: 29px Montserrat, Arial, sans-serif;
+  color: #fff;
+  font-weight: bold;
+  text-transform: uppercase; }
+
+.descr {
+  margin-top: 17px;
+  font: 18px "Roboto Light", Arial, sans-serif;
+  color: #fff; }
+
+.header .btn-search-partner {
+  margin-top: 19px; }
+
+.wrapper {
+  padding: 38px 10px 0 10px;
+  text-align: center; }
+
+.how-works h2 {
+  margin-bottom: 20px; }
+
+.step {
+  margin: 10px auto 0 auto;
+  padding: 81px 19px 20px 19px;
+  -webkit-border-radius: 5px;
+          border-radius: 5px;
+  text-align: left; }
+  .step__btn {
+    display: inline-block;
+    padding: 5px 12px;
+    background: #ff4e50;
+    -webkit-border-radius: 20px;
+            border-radius: 20px;
+    font: 10px Montserrat, Arial, sans-serif;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 4px; }
+  .step__title {
+    margin-top: 15px;
+    font: 24px Montserrat, Arial, sans-serif;
+    color: #fff;
+    font-weight: bold; }
+  .step__text {
+    margin-top: 15px;
+    font: 14px "Roboto Light", Arial, sans-serif;
+    color: #ccc; }
+  .step--bg1 {
+    width: 262px;
+    height: 166px;
+    background: #ccc url(../img/step-1.jpg) 0 0 no-repeat; }
+  .step--bg2-and-padding {
+    width: 262px;
+    height: 137px;
+    padding: 102px 19px 20px 19px;
+    background: #ccc url(../img/step-2.jpg) 0 0 no-repeat; }
+  .step--bg3 {
+    width: 262px;
+    height: 162px;
+    background: #ccc url(../img/step-3.jpg) 0 0 no-repeat; }
+
+.meet-partner {
+  padding-top: 39px; }
+
+.partner {
+  width: 220px;
+  margin: 29px auto;
+  text-align: center; }
+  .partner__photo-wrap {
+    width: 125px;
+    margin: 0 auto;
+    position: relative; }
+    .partner__photo-wrap--add-icon-1:after, .partner__photo-wrap--add-icon-2:after, .partner__photo-wrap--add-icon-3:after, .partner__photo-wrap--add-icon-4:after {
+      content: url("../img/icon-partner-1.png");
+      width: 41px;
+      height: 41px;
+      position: absolute;
+      right: -2px;
+      bottom: -2px; }
+    .partner__photo-wrap--add-icon-2:after {
+      content: url("../img/icon-partner-2.png"); }
+    .partner__photo-wrap--add-icon-3:after {
+      content: url("../img/icon-partner-3.png"); }
+    .partner__photo-wrap--add-icon-4:after {
+      content: url("../img/icon-partner-4.png"); }
+  .partner__name {
+    margin-top: 19px;
+    font: 14px Montserrat, Arial, sans-serif;
+    color: #333;
+    font-weight: bold; }
+  .partner__about {
+    margin-top: 15px;
+    font: 14px "Roboto Light", Arial, sans-serif;
+    color: #666; }
+  .partner--margin {
+    margin-top: 18px; }
+
+.meet-partner .btn-more-partners {
+  display: block;
+  width: 280px;
+  padding: 11px 0;
+  border: 2px solid #ff4e50;
+  -webkit-border-radius: 20px;
+          border-radius: 20px;
+  margin: 0 auto;
+  font: 14px Montserrat, Arial, sans-serif;
+  color: #ff4e50;
+  font-weight: bold; }
+
+.holiday-ideas h2 {
+  margin-top: 38px; }
+
+.tile {
+  margin: 10px;
+  position: relative; }
+  .tile__tag {
+    font: 22px Montserrat, Arial, sans-serif;
+    color: #fff;
+    font-weight: bold;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%); }
+  .tile__img {
+    width: 100%;
+    height: 100%; }
+
+.search-partner__title {
+  margin-top: 18px;
+  font: 18px "Roboto Light", Arial, sans-serif;
+  color: #333; }
+
+.search-partner__field {
+  width: 250px;
+  margin-top: 18px;
+  padding: 7px 15px;
+  border: 1px solid #ccc;
+  -webkit-border-radius: 5px;
+          border-radius: 5px;
+  font: 14px "Roboto Light", Arial, sans-serif;
+  color: #999; }
+
+.search-partner__btn {
+  margin-top: 10px;
+  border: none;
+  cursor: pointer; }
+
+.footer {
+  padding: 20px 10px 17px 10px;
+  border-top: 4px solid #ff4e50;
+  margin-top: 40px;
+  text-align: center; }
+  .footer .logo-footer a {
+    font: 16px Montserrat, Arial, sans-serif;
+    color: #ff4e50;
+    font-weight: bold; }
+  .footer .company, .footer .partners {
+    margin-top: 17px;
+    font: 14px Montserrat, Arial, sans-serif;
+    color: #333;
+    font-weight: bold; }
+  .footer .designed {
+    margin-top: 19px;
+    font: 10px Montserrat, Arial, sans-serif;
+    color: #ccc;
+    font-weight: bold;
+    text-transform: uppercase; }
+  .footer .developer {
+    margin-top: 10px; }
+
+.nav {
+  width: 210px;
+  margin: 7px auto 0 auto; }
+  .nav__item {
+    margin-left: 13px;
+    float: left; }
+  .nav__link {
+    font: 14px "Roboto Light", Arial, sans-serif;
+    color: #666; }
+
+/*# sourceMappingURL=main.css.map */
