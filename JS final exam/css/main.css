@@ -105,12 +105,18 @@ h2 {
     color: #fff;
     font-weight: bold;
     float: left; }
+    .login__link:hover {
+      color: #EC4547; }
     .login__link--border {
       margin: -12px 0 0 0;
       padding: 8px 15px;
       border: 2px solid #fff;
       -webkit-border-radius: 20px;
               border-radius: 20px; }
+      .login__link--border:hover {
+        border: 2px solid #EC4547;
+        background: #EC4547;
+        color: #fff; }
 
 .logo {
   margin-top: 120px; }
@@ -133,6 +139,8 @@ h2 {
 
 .header .btn-search-partner {
   margin-top: 19px; }
+  .header .btn-search-partner:hover {
+    background: #EC4547; }
 
 .wrapper {
   padding: 38px 10px 0 10px;
@@ -157,6 +165,8 @@ h2 {
     color: #fff;
     text-transform: uppercase;
     letter-spacing: 4px; }
+    .step__btn:hover {
+      background: #EC4547; }
   .step__title {
     margin-top: 15px;
     font: 24px Montserrat, Arial, sans-serif;
@@ -227,6 +237,10 @@ h2 {
   font: 14px Montserrat, Arial, sans-serif;
   color: #ff4e50;
   font-weight: bold; }
+  .meet-partner .btn-more-partners:hover {
+    border: 2px solid #EC4547;
+    background: #EC4547;
+    color: #fff; }
 
 .holiday-ideas h2 {
   margin-top: 38px; }
@@ -248,25 +262,26 @@ h2 {
     width: 100%;
     height: 100%; }
 
-.search-partner__title {
-  margin-top: 18px;
-  font: 18px "Roboto Light", Arial, sans-serif;
-  color: #333; }
-
-.search-partner__field {
-  width: 250px;
-  margin-top: 18px;
-  padding: 7px 15px;
-  border: 1px solid #ccc;
-  -webkit-border-radius: 5px;
-          border-radius: 5px;
-  font: 14px "Roboto Light", Arial, sans-serif;
-  color: #999; }
-
-.search-partner__btn {
-  margin-top: 10px;
-  border: none;
-  cursor: pointer; }
+.search-partner {
+  margin-top: 18px; }
+  .search-partner__title {
+    font: 18px "Roboto Light", Arial, sans-serif;
+    color: #333; }
+  .search-partner__field {
+    width: 250px;
+    margin-top: 18px;
+    padding: 9px 15px;
+    border: 1px solid #ccc;
+    -webkit-border-radius: 5px;
+            border-radius: 5px;
+    font: 14px "Roboto Light", Arial, sans-serif;
+    color: #999; }
+  .search-partner__btn {
+    margin-top: 10px;
+    border: none;
+    cursor: pointer; }
+    .search-partner__btn:hover {
+      background: #EC4547; }
 
 .footer {
   padding: 20px 10px 17px 10px;
@@ -282,13 +297,16 @@ h2 {
     font: 14px Montserrat, Arial, sans-serif;
     color: #333;
     font-weight: bold; }
-  .footer .designed {
-    margin-top: 19px;
+
+.developer {
+  margin-top: 19px; }
+  .developer__designed {
     font: 10px Montserrat, Arial, sans-serif;
     color: #ccc;
     font-weight: bold;
-    text-transform: uppercase; }
-  .footer .developer {
+    text-transform: uppercase;
+    letter-spacing: 1px; }
+  .developer__logo {
     margin-top: 10px; }
 
 .nav {
@@ -300,6 +318,8 @@ h2 {
   .nav__link {
     font: 14px "Roboto Light", Arial, sans-serif;
     color: #666; }
+    .nav__link:hover {
+      color: #EC4547; }
 
 @media (min-width: 768px) {
   .header {
@@ -349,6 +369,50 @@ h2 {
   .meet-partner .btn-more-partners {
     width: 190px; }
   .holiday-ideas h2 {
-    margin-top: 97px; } }
+    margin-top: 97px; }
+  .tile {
+    max-width: 28%;
+    margin: 20px 0 0 0;
+    -webkit-border-radius: 10px;
+            border-radius: 10px;
+    float: left; }
+  .search-partner {
+    width: 410px;
+    margin: 39px auto 0 auto; }
+  .search-partner__field {
+    width: 208px;
+    margin-top: 39px;
+    margin-right: 10px;
+    float: left; }
+  .search-partner__btn {
+    width: 159px;
+    margin-top: 39px;
+    float: left; }
+  .footer {
+    padding: 40px;
+    margin-top: 100px;
+    text-align: left;
+    position: relative; }
+    .footer .logo-footer {
+      float: left; }
+    .footer .company, .footer .partners {
+      margin: 0 0 0 81px;
+      float: left; }
+    .footer .partners {
+      margin-left: 100px; }
+  .nav {
+    width: 100px;
+    position: absolute;
+    left: 243px;
+    top: 62px; }
+    .nav__item {
+      margin-bottom: 6px;
+      float: none; }
+  .developer {
+    margin-top: 0;
+    float: right;
+    text-align: right; }
+  .tiles {
+    width: 680px; } }
 
 /*# sourceMappingURL=main.css.map */

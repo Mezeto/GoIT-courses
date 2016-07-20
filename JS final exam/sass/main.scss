@@ -88,11 +88,19 @@ h2 {
 		color: #fff;
 		font-weight: bold;
 		float: left;
+		&:hover {
+			color: #EC4547;
+		}
 		&--border {
 			margin: -12px 0 0 0;
 			padding: 8px 15px;
 			border: 2px solid #fff;
 			border-radius: 20px;
+			&:hover {
+				border: 2px solid #EC4547;
+				background: #EC4547;
+				color: #fff;
+			}
 		}
 	}
 }
@@ -123,6 +131,9 @@ h2 {
 .header .btn-search-partner {
 	@extend %btn-search-partner;
 	margin-top: 19px;
+	&:hover {
+		background: #EC4547;
+	}
 }
 
 .wrapper {
@@ -137,7 +148,6 @@ h2 {
 
 .step {
 	margin: 10px auto 0 auto;
-
 	padding: 81px 19px 20px 19px;
 	border-radius: 5px;
 	text-align: left;
@@ -150,6 +160,9 @@ h2 {
 		color: $btn-color;
 		text-transform: uppercase;
 		letter-spacing: 4px;
+		&:hover {
+			background: #EC4547;
+		}
 	}
 	&__title {
 		margin-top: 15px;
@@ -240,6 +253,11 @@ h2 {
 	font: 14px $Montserrat;
 	color: #ff4e50;
 	font-weight: bold;
+	&:hover {
+		border: 2px solid #EC4547;
+		background: #EC4547;
+		color: #fff;
+	}
 }
 
 //*********section***
@@ -266,15 +284,15 @@ h2 {
 }
 
 .search-partner {
+	margin-top: 18px;
 	&__title {
-		margin-top: 18px;
 		font: 18px $Roboto-Light;
 		color: #333;
 	}
 	&__field {
 		width: 280px - 15px - 15px;
 		margin-top: 18px;
-		padding: 7px 15px;
+		padding: 9px 15px;
 		border: 1px solid #ccc;
 		border-radius: 5px;
 		font: 14px $Roboto-Light;
@@ -285,6 +303,9 @@ h2 {
 		margin-top: 10px;
 		border: none;
 		cursor: pointer;
+		&:hover {
+			background: #EC4547;
+		}
 	}
 }
 
@@ -305,14 +326,18 @@ h2 {
 		color: #333;
 		font-weight: bold;
 	}
-	.designed {
-		margin-top: 19px;
+}
+
+.developer {
+	margin-top: 19px;
+	&__designed {
 		font: 10px $Montserrat;
 		color: #ccc;
 		font-weight: bold;
 		text-transform: uppercase;
+		letter-spacing: 1px;
 	}
-	.developer {
+	&__logo {
 		margin-top: 10px;
 	}
 }
@@ -320,9 +345,6 @@ h2 {
 .nav {
 	width: 210px;
 	margin: 7px auto 0 auto;
-	&__list {
-
-	}
 	&__item {
 		margin-left: 13px;
 		float: left;
@@ -330,6 +352,9 @@ h2 {
 	&__link {
 		font: 14px $Roboto-Light;
 		color: #666;
+		&:hover {
+			color: #EC4547;
+		}
 	}
 }
 
@@ -419,6 +444,70 @@ h2 {
 	//**********section****
 	.holiday-ideas h2 {
 		margin-top: 97px;
+	}
+
+	.tile {
+		max-width: 28%;
+		margin: 20px 0 0 0;
+		border-radius: 10px;
+		float: left;
+	}
+
+	.search-partner {
+		width: 410px;
+		margin: 39px auto 0 auto;
+	}
+
+	.search-partner__field {
+		width: 238px - 15px - 15px;
+		margin-top: 39px;
+		margin-right: 10px;
+		float: left;
+	}
+
+	.search-partner__btn {
+		width: 159px;
+		margin-top: 39px;
+		float: left;
+	}
+
+	//*****section***
+	.footer {
+		padding: 40px;
+		margin-top: 100px;
+		text-align: left;
+		position: relative;
+		.logo-footer {
+			float: left;
+		}
+		.company, .partners {
+			margin: 0 0 0 81px;
+			float: left;
+		}
+		.partners {
+			margin-left: 100px;
+		}
+	}
+
+	.nav {
+		width: 100px;
+		position: absolute;
+		left: 243px;
+		top: 62px;
+		&__item {
+			margin-bottom: 6px;
+			float: none;
+		}
+	}
+
+	.developer {
+		margin-top: 0;
+		float: right;
+		text-align: right;
+	}
+
+	.tiles {
+		width: 680px;
 	}
 }
 
