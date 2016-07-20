@@ -1,7 +1,20 @@
 $(function () {
+	var $tiles = $('.tiles');
 
-	var searchField = $('.search-partner__field');
-	var searchBtn = $('.search-partner__btn');
+	$(document).ajaxComplete(function() {
+		$tiles.masonry('destroy');
+
+		$tiles.imagesLoaded(function() {
+			$tiles.masonry({
+				itemSelector: ".tile",
+				columnWidth: ".tile",
+				gutter: 20
+			});
+		});
+	});
+
+	var $searchField = $('.search-partner__field');
+	var $searchBtn = $('.search-partner__btn');
 	var tmplHtml = $('#tmplHtml').html();
 
 	function ajaxQuery(query) {
@@ -20,17 +33,17 @@ $(function () {
 		});
 	}
 
-	ajaxQuery('travel');
+	ajaxQuery('country');
 
-	searchBtn.click(function (e) {
-		var query = searchField.val();
+	$searchBtn.click(function (e) {
+		var query = $searchField.val();
 
-		searchField.val('');
-		searchField.blur();
-		$('.tiles').html('');
+		$searchField.val('');
+		$searchField.blur();
+		$tiles.html('');
 
 		ajaxQuery(query);
-
+		
 		e.preventDefault();
 	});
 
