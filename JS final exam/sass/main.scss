@@ -39,7 +39,8 @@ $btn-color: #fff;
 $Roboto-Light: 'Roboto Light', Arial, sans-serif;
 $Montserrat: Montserrat, Arial, sans-serif;
 
-.clearfix:after {
+.clearfix:after,
+.clearfix:before {
 	content: ' ';
 	display: block;
 	clear: both;
@@ -79,7 +80,7 @@ h2 {
 }
 
 .login {
-	width: 168px;
+	width: 150px;
 	margin: 0 auto;
 	&__link {
 		margin-right: 18px;
@@ -88,7 +89,7 @@ h2 {
 		font-weight: bold;
 		float: left;
 		&--border {
-			margin-top: -12px;
+			margin: -12px 0 0 0;
 			padding: 8px 15px;
 			border: 2px solid #fff;
 			border-radius: 20px;
@@ -136,6 +137,7 @@ h2 {
 
 .step {
 	margin: 10px auto 0 auto;
+
 	padding: 81px 19px 20px 19px;
 	border-radius: 5px;
 	text-align: left;
@@ -191,7 +193,6 @@ h2 {
 		width: 125px;
 		margin: 0 auto;
 		position: relative;
-
 		&--add-icon-1:after {
 			content: url("../img/icon-partner-1.png");
 			width: 41px;
@@ -330,6 +331,94 @@ h2 {
 		font: 14px $Roboto-Light;
 		color: #666;
 	}
+}
 
+@media (min-width: 768px) {
+
+	.header {
+		padding: 50px 50px 67px 50px;
+	}
+
+	.logo {
+		margin: 0;
+		float: left;
+	}
+
+	.login {
+		margin: 0;
+		float: right;
+	}
+
+	.title {
+		margin-top: 155px;
+		font-size: 52px;
+	}
+
+	.descr {
+		margin-top: 39px;
+		font-size: 24px;
+	}
+
+	.header .btn-search-partner {
+		margin-top: 39px;
+	}
+
+	//******section***
+	.wrapper {
+		padding: 95px 10px 0 10px;
+	}
+
+	.how-works h2 {
+		margin-bottom: 37px;
+	}
+
+	.step-wrap {
+		width: 33.3%;
+		float: left;
+	}
+
+	.step {
+		width: 236px - 19px - 19px;
+		height: 417px - 211px - 20px;
+		padding-top: 211px;
+		&--bg1 {
+			background: #ccc url(../img/step-1-md.jpg) 0 0 no-repeat;
+		}
+		&--bg2-and-padding-and-margin {
+			height: 417px - 259px - 20px;
+			padding-top: 259px;
+			background: #ccc url(../img/step-2-md.jpg) 0 0 no-repeat;
+		}
+		&--bg3 {
+			background: #ccc url(../img/step-3-md.jpg) 0 0 no-repeat;
+		}
+	}
+
+	//******section******
+	.meet-partner {
+		padding-top: 95px;
+	}
+
+	.meet-partner h2 {
+		margin-bottom: 35px;
+	}
+
+	.partner-wrap {
+		width: 50%;
+		float: left;
+	}
+
+	.partner--margin-top {
+		margin-top: 56px;
+	}
+
+	.meet-partner .btn-more-partners {
+		width: 190px;
+	}
+
+	//**********section****
+	.holiday-ideas h2 {
+		margin-top: 97px;
+	}
 }
 

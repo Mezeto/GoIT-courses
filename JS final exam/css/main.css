@@ -62,7 +62,8 @@ table {
   font-weight: bold;
   font-style: normal; }
 
-.clearfix:after {
+.clearfix:after,
+.clearfix:before {
   content: ' ';
   display: block;
   clear: both; }
@@ -96,7 +97,7 @@ h2 {
   text-align: center; }
 
 .login {
-  width: 168px;
+  width: 150px;
   margin: 0 auto; }
   .login__link {
     margin-right: 18px;
@@ -105,7 +106,7 @@ h2 {
     font-weight: bold;
     float: left; }
     .login__link--border {
-      margin-top: -12px;
+      margin: -12px 0 0 0;
       padding: 8px 15px;
       border: 2px solid #fff;
       -webkit-border-radius: 20px;
@@ -299,5 +300,55 @@ h2 {
   .nav__link {
     font: 14px "Roboto Light", Arial, sans-serif;
     color: #666; }
+
+@media (min-width: 768px) {
+  .header {
+    padding: 50px 50px 67px 50px; }
+  .logo {
+    margin: 0;
+    float: left; }
+  .login {
+    margin: 0;
+    float: right; }
+  .title {
+    margin-top: 155px;
+    font-size: 52px; }
+  .descr {
+    margin-top: 39px;
+    font-size: 24px; }
+  .header .btn-search-partner {
+    margin-top: 39px; }
+  .wrapper {
+    padding: 95px 10px 0 10px; }
+  .how-works h2 {
+    margin-bottom: 37px; }
+  .step-wrap {
+    width: 33.3%;
+    float: left; }
+  .step {
+    width: 198px;
+    height: 186px;
+    padding-top: 211px; }
+    .step--bg1 {
+      background: #ccc url(../img/step-1-md.jpg) 0 0 no-repeat; }
+    .step--bg2-and-padding-and-margin {
+      height: 138px;
+      padding-top: 259px;
+      background: #ccc url(../img/step-2-md.jpg) 0 0 no-repeat; }
+    .step--bg3 {
+      background: #ccc url(../img/step-3-md.jpg) 0 0 no-repeat; }
+  .meet-partner {
+    padding-top: 95px; }
+  .meet-partner h2 {
+    margin-bottom: 35px; }
+  .partner-wrap {
+    width: 50%;
+    float: left; }
+  .partner--margin-top {
+    margin-top: 56px; }
+  .meet-partner .btn-more-partners {
+    width: 190px; }
+  .holiday-ideas h2 {
+    margin-top: 97px; } }
 
 /*# sourceMappingURL=main.css.map */
