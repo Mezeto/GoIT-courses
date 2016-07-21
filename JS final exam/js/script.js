@@ -13,8 +13,8 @@ $(function () {
 		});
 	});
 
-	var $searchField = $('.search-partner__field');
-	var $searchBtn = $('.search-partner__btn');
+	var $searchField = $('.form-search-partner__field');
+	var $searchBtn = $('.form-search-partner__btn');
 	var tmplHtml = $('#tmplHtml').html();
 
 	function ajaxQuery(query) {

@@ -76,7 +76,7 @@ h2 {
   color: #333;
   font-weight: bold; }
 
-.header .btn-search-partner, .search-partner__btn {
+.header .btn-search-partner, .form-search-partner__btn {
   display: block;
   width: 280px;
   padding: 11px 0;
@@ -201,6 +201,8 @@ h2 {
     width: 125px;
     margin: 0 auto;
     position: relative; }
+    .partner__photo-wrap a {
+      display: block; }
     .partner__photo-wrap--add-icon-1:after, .partner__photo-wrap--add-icon-2:after, .partner__photo-wrap--add-icon-3:after, .partner__photo-wrap--add-icon-4:after {
       content: url("../img/icon-partner-1.png");
       width: 41px;
@@ -262,12 +264,12 @@ h2 {
     width: 100%;
     height: 100%; }
 
-.search-partner {
+.form-search-partner {
   margin-top: 18px; }
-  .search-partner__title {
+  .form-search-partner__title {
     font: 18px "Roboto Light", Arial, sans-serif;
     color: #333; }
-  .search-partner__field {
+  .form-search-partner__field {
     width: 250px;
     margin-top: 18px;
     padding: 9px 15px;
@@ -276,11 +278,11 @@ h2 {
             border-radius: 5px;
     font: 14px "Roboto Light", Arial, sans-serif;
     color: #999; }
-  .search-partner__btn {
+  .form-search-partner__btn {
     margin-top: 10px;
     border: none;
     cursor: pointer; }
-    .search-partner__btn:hover {
+    .form-search-partner__btn:hover {
       background: #EC4547; }
 
 .footer {
@@ -364,8 +366,12 @@ h2 {
   .partner-wrap {
     width: 50%;
     float: left; }
-  .partner--margin-top {
-    margin-top: 56px; }
+  .partner {
+    margin-top: 0; }
+    .partner--margin {
+      margin-top: 0; }
+    .partner--margin-top {
+      margin-top: 56px; }
   .meet-partner .btn-more-partners {
     width: 190px; }
   .holiday-ideas h2 {
@@ -379,20 +385,20 @@ h2 {
     -webkit-border-radius: 10px;
             border-radius: 10px;
     float: left; }
-  .search-partner {
+  .form-search-partner {
     width: 410px;
-    margin: 39px auto 0 auto; }
-  .search-partner__field {
-    width: 208px;
-    margin-top: 39px;
-    margin-right: 10px;
-    float: left; }
-  .search-partner__btn {
-    width: 159px;
-    margin-top: 39px;
-    float: left; }
+    margin: 36px auto 0 auto; }
+    .form-search-partner__field {
+      width: 208px;
+      margin-top: 39px;
+      margin-right: 10px;
+      float: left; }
+    .form-search-partner__btn {
+      width: 159px;
+      margin-top: 39px;
+      float: left; }
   .footer {
-    padding: 40px;
+    padding: 40px 40px 92px 40px;
     margin-top: 100px;
     text-align: left;
     position: relative; }
@@ -415,5 +421,41 @@ h2 {
     margin-top: 0;
     float: right;
     text-align: right; } }
+
+@media (min-width: 977px) {
+  .header {
+    padding: 50px 0; }
+    .header .wrap {
+      padding: 0 10px; }
+  .header .wrap,
+  .wrapper {
+    max-width: 940px;
+    margin: 0 auto; }
+  .step {
+    width: 263px;
+    height: 166px;
+    padding-top: 230px; }
+    .step--bg1 {
+      background: #ccc url(../img/step-1-lg.jpg) 0 0 no-repeat; }
+    .step--bg2-and-padding-and-margin {
+      height: 137px;
+      padding-top: 259px;
+      background: #ccc url(../img/step-2-lg.jpg) 0 0 no-repeat; }
+    .step--bg3 {
+      background: #ccc url(../img/step-3-lg.jpg) 0 0 no-repeat; }
+  .partner-wrap {
+    width: 25%; }
+  .partner--margin-top {
+    margin-top: 0; }
+  .tiles {
+    width: 100%; }
+  .footer .wrap {
+    max-width: 940px;
+    padding: 0 10px;
+    margin: 0 auto;
+    position: relative; }
+  .nav {
+    left: 212px;
+    top: 25px; } }
 
 /*# sourceMappingURL=main.css.map */

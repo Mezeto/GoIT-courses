@@ -56,7 +56,6 @@ h2 {
 	font-weight: bold;
 }
 
-
 %btn-search-partner {
 	display: block;
 	width: 280px;
@@ -68,7 +67,6 @@ h2 {
 	color: $btn-color;
 	font-weight: bold;
 }
-
 
 .header {
 	min-height: 540px;
@@ -206,6 +204,9 @@ h2 {
 		width: 125px;
 		margin: 0 auto;
 		position: relative;
+		a {
+			display: block;
+		}
 		&--add-icon-1:after {
 			content: url("../img/icon-partner-1.png");
 			width: 41px;
@@ -283,7 +284,7 @@ h2 {
 	}
 }
 
-.search-partner {
+.form-search-partner {
 	margin-top: 18px;
 	&__title {
 		font: 18px $Roboto-Light;
@@ -433,8 +434,14 @@ h2 {
 		float: left;
 	}
 
-	.partner--margin-top {
-		margin-top: 56px;
+	.partner {
+		margin-top: 0;
+		&--margin {
+			margin-top: 0;
+		}
+		&--margin-top {
+			margin-top: 56px;
+		}
 	}
 
 	.meet-partner .btn-more-partners {
@@ -445,12 +452,11 @@ h2 {
 	.holiday-ideas h2 {
 		margin-top: 97px;
 	}
-	 
+
 	.tiles {
 		width: 550px;
 		margin: 0 auto;
 	}
-
 
 	.tile {
 		max-width: 28%;
@@ -459,27 +465,26 @@ h2 {
 		float: left;
 	}
 
-	.search-partner {
+	.form-search-partner {
 		width: 410px;
-		margin: 39px auto 0 auto;
+		margin: 36px auto 0 auto;
+		&__field {
+			width: 238px - 15px - 15px;
+			margin-top: 39px;
+			margin-right: 10px;
+			float: left;
+		}
+		&__btn {
+			width: 159px;
+			margin-top: 39px;
+			float: left;
+		}
 	}
 
-	.search-partner__field {
-		width: 238px - 15px - 15px;
-		margin-top: 39px;
-		margin-right: 10px;
-		float: left;
-	}
-
-	.search-partner__btn {
-		width: 159px;
-		margin-top: 39px;
-		float: left;
-	}
 
 	//*****section***
 	.footer {
-		padding: 40px;
+		padding: 40px 40px 92px 40px;
 		margin-top: 100px;
 		text-align: left;
 		position: relative;
@@ -510,6 +515,67 @@ h2 {
 		margin-top: 0;
 		float: right;
 		text-align: right;
+	}
+}
+
+@media (min-width: 977px) {
+
+	.header {
+		padding: 50px 0;
+		.wrap {
+			padding: 0 10px;
+		}
+	}
+
+	.header .wrap,
+	.wrapper {
+		max-width: 960px - 10px - 10px;
+		margin: 0 auto;
+	}
+
+	//*****section****
+	.step {
+		width: 301px - 19px - 19px;
+		height: 416px - 230px - 20px;
+		padding-top: 230px;
+		&--bg1 {
+			background: #ccc url(../img/step-1-lg.jpg) 0 0 no-repeat;
+		}
+		&--bg2-and-padding-and-margin {
+			height: 416px - 259px - 20px;
+			padding-top: 259px;
+			background: #ccc url(../img/step-2-lg.jpg) 0 0 no-repeat;
+		}
+		&--bg3 {
+			background: #ccc url(../img/step-3-lg.jpg) 0 0 no-repeat;
+		}
+	}
+
+	//******section****
+	.partner-wrap {
+		width: 25%;
+	}
+
+	.partner--margin-top {
+		margin-top: 0;
+	}
+
+	//*******section*****
+	.tiles {
+		width: 100%;
+	}
+
+	//*********section*****
+	.footer .wrap {
+		max-width: 960px - 10px - 10px;
+		padding: 0 10px;
+		margin: 0 auto;
+		position: relative;
+	}
+
+	.nav {
+		left: 212px;
+		top: 25px;
 	}
 }
 
