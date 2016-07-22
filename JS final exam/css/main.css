@@ -41,6 +41,68 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
+.wrap-need-for-arrows,
+.jcarousel {
+  width: 300px;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden; }
+  .wrap-need-for-arrows__item-2, .wrap-need-for-arrows__item-3,
+  .jcarousel__item-2,
+  .jcarousel__item-3 {
+    display: none; }
+  @media (min-width: 768px) {
+    .wrap-need-for-arrows,
+    .jcarousel {
+      width: 236px; }
+      .wrap-need-for-arrows__item-2, .wrap-need-for-arrows__item-3,
+      .jcarousel__item-2,
+      .jcarousel__item-3 {
+        display: block; } }
+  @media (min-width: 977px) {
+    .wrap-need-for-arrows,
+    .jcarousel {
+      width: 301px; } }
+
+.jcarousel ul {
+  width: 20000em;
+  padding: 0;
+  margin: 0;
+  position: relative;
+  list-style: none; }
+
+.jcarousel li {
+  float: left; }
+
+/** Carousel Controls **/
+.jcarousel-control-prev,
+.jcarousel-control-next {
+  display: none;
+  width: 30px;
+  height: 56px;
+  position: absolute;
+  top: 200px; }
+  @media (min-width: 768px) {
+    .jcarousel-control-prev,
+    .jcarousel-control-next {
+      display: block; } }
+
+.jcarousel-control-prev {
+  left: 10px;
+  top: 40px; }
+  @media (min-width: 977px) {
+    .jcarousel-control-prev {
+      left: 20px;
+      top: 152px; } }
+
+.jcarousel-control-next {
+  right: 10px;
+  top: 40px; }
+  @media (min-width: 977px) {
+    .jcarousel-control-next {
+      right: 20px;
+      top: 152px; } }
+
 @font-face {
   font-family: 'Roboto Light';
   src: url("../fonts/Roboto-Light-Regular/roboto-light-webfont.eot");

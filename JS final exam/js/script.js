@@ -1,4 +1,6 @@
 $(function () {
+
+	// инит. масонри
 	var $tiles = $('.tiles');
 
 	$(document).ajaxComplete(function() {
@@ -13,6 +15,8 @@ $(function () {
 		});
 	});
 
+
+	// получение картинок с сервера и вставка на страницу
 	var $searchField = $('.form-search-partner__field');
 	var $searchBtn = $('.form-search-partner__btn');
 	var tmplHtml = $('#tmplHtml').html();
@@ -48,4 +52,21 @@ $(function () {
 	});
 
 
+	// карусель
+	if ( $('html').width() < 751 ) {
+		return;
+	} else {
+		$('.jcarousel').jcarousel({
+			wrap: 'circular'
+		});
+	}
+
+	$('.jcarousel-control-prev').jcarouselControl({
+		target: '-=1'
+	});
+
+	$('.jcarousel-control-next').jcarouselControl({
+		target: '+=1'
+	});
+	
 });//Ready
