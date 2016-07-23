@@ -92,7 +92,7 @@ table {
   @media (min-width: 977px) {
     .jcarousel-control-prev {
       left: 20px;
-      top: 152px; } }
+      top: 162px; } }
 
 .jcarousel-control-next {
   right: 10px;
@@ -100,7 +100,7 @@ table {
   @media (min-width: 977px) {
     .jcarousel-control-next {
       right: 20px;
-      top: 152px; } }
+      top: 162px; } }
 
 @font-face {
   font-family: 'Roboto Light';
@@ -306,7 +306,10 @@ h2 {
     color: #fff; }
 
 .holiday-ideas {
-  margin-top: 29px; }
+  margin-top: 37px; }
+
+.holiday-ideas h2 {
+  margin: 27px 0 8px 0; }
 
 .tile {
   margin: 5px 0;
@@ -473,7 +476,7 @@ h2 {
   .nav {
     width: 100px;
     position: absolute;
-    left: 253px;
+    left: 256px;
     top: 64px; }
     .nav__item {
       margin-bottom: 6px;
@@ -485,7 +488,7 @@ h2 {
 
 @media (min-width: 977px) {
   .header {
-    padding: 50px 0; }
+    padding: 50px 0 212px 0; }
     .header .wrap {
       padding: 0 10px; }
   .header .wrap,
@@ -508,15 +511,19 @@ h2 {
     width: 25%; }
   .partner--margin-top {
     margin-top: 0; }
-  .tiles {
-    width: 100%; }
   .footer .wrap {
     max-width: 940px;
     padding: 0 10px;
     margin: 0 auto;
     position: relative; }
   .nav {
-    left: 212px;
-    top: 25px; } }
+    left: 238px;
+    top: 25px; }
+  .footer {
+    padding: 38px 0 92px 0; }
+    .footer .company, .footer .partners {
+      margin: 0 0 0 107px; }
+    .footer .partners {
+      margin-left: 93px; } }
 
 /*# sourceMappingURL=main.css.map */
