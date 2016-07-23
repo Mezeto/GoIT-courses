@@ -1,0 +1,34 @@
+$btn-bg: #ff4e50;
+$btn-color: #fff;
+
+$Roboto-Light: 'Roboto Light', Arial, sans-serif;
+$Montserrat: Montserrat, Arial, sans-serif;
+
+.clearfix:after,
+.clearfix:before {
+	content: ' ';
+	display: block;
+	clear: both;
+}
+
+a {
+	text-decoration: none;
+}
+
+h2 {
+	font: 22px $Montserrat;
+	color: #333;
+	font-weight: bold;
+}
+
+%btn-search-partner {
+	display: block;
+	width: 284px;
+	padding: 11px 0;
+	border-radius: 20px;
+	margin: 0 auto;
+	background: $btn-bg;
+	font: 14px $Montserrat;
+	color: $btn-color;
+	font-weight: bold;
+}
