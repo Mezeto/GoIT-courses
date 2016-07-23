@@ -505,7 +505,7 @@ h2 {
 	.nav {
 		width: 100px;
 		position: absolute;
-		left: 253px;
+		left: 256px;
 		top: 64px;
 		&__item {
 			margin-bottom: 6px;
@@ -523,7 +523,7 @@ h2 {
 @media (min-width: 977px) {
 
 	.header {
-		padding: 50px 0;
+		padding: 50px 0 212px 0;
 		.wrap {
 			padding: 0 10px;
 		}
@@ -562,11 +562,6 @@ h2 {
 		margin-top: 0;
 	}
 
-	//*******section*****
-	.tiles {
-		width: 100%;
-	}
-
 	//*********section*****
 	.footer .wrap {
 		max-width: 960px - 10px - 10px;
@@ -576,8 +571,17 @@ h2 {
 	}
 
 	.nav {
-		left: 212px;
+		left: 238px;
 		top: 25px;
+	}
+
+	.footer {
+		.company, .partners {
+			margin: 0 0 0 107px;
+		}
+		.partners {
+			margin-left: 93px;
+		}
 	}
 }
 
