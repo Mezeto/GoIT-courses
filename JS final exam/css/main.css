@@ -140,7 +140,7 @@ h2 {
 
 .header .btn-search-partner, .form-search-partner__btn {
   display: block;
-  width: 280px;
+  width: 284px;
   padding: 11px 0;
   -webkit-border-radius: 20px;
           border-radius: 20px;
@@ -151,7 +151,7 @@ h2 {
   font-weight: bold; }
 
 .header {
-  min-height: 540px;
+  min-height: 442px;
   min-width: 280px;
   padding: 32px 20px 67px 20px;
   background: #cccccc url(../img/bg_header.jpg) center no-repeat;
@@ -159,7 +159,7 @@ h2 {
   text-align: center; }
 
 .login {
-  width: 150px;
+  width: 153px;
   margin: 0 auto; }
   .login__link {
     margin-right: 18px;
@@ -181,45 +181,45 @@ h2 {
         color: #fff; }
 
 .logo {
-  margin-top: 120px; }
+  margin-top: 116px; }
   .logo a {
     font: 20px Montserrat, Arial, sans-serif;
     color: #fff;
     font-weight: bold; }
 
 .title {
-  margin-top: 38px;
+  margin-top: 29px;
   font: 29px Montserrat, Arial, sans-serif;
   color: #fff;
   font-weight: bold;
   text-transform: uppercase; }
 
 .descr {
-  margin-top: 17px;
+  margin-top: 8px;
   font: 18px "Roboto Light", Arial, sans-serif;
   color: #fff; }
 
 .header .btn-search-partner {
-  margin-top: 19px; }
+  margin-top: 12px; }
   .header .btn-search-partner:hover {
     background: #EC4547; }
 
 .wrapper {
-  padding: 38px 10px 0 10px;
+  padding: 34px 10px 0 10px;
   text-align: center; }
 
 .how-works h2 {
-  margin-bottom: 20px; }
+  margin-bottom: 4px; }
 
 .step {
   margin: 10px auto 0 auto;
-  padding: 81px 19px 20px 19px;
+  padding: 69px 19px 5px 19px;
   -webkit-border-radius: 5px;
           border-radius: 5px;
   text-align: left; }
   .step__btn {
     display: inline-block;
-    padding: 5px 12px;
+    padding: 4px 8px;
     background: #ff4e50;
     -webkit-border-radius: 20px;
             border-radius: 20px;
@@ -235,8 +235,8 @@ h2 {
     color: #fff;
     font-weight: bold; }
   .step__text {
-    margin-top: 15px;
-    font: 14px "Roboto Light", Arial, sans-serif;
+    margin-top: 10px;
+    font: 14px/17px "Roboto Light", Arial, sans-serif;
     color: #ccc; }
   .step--bg1 {
     width: 262px;
@@ -245,7 +245,7 @@ h2 {
   .step--bg2-and-padding {
     width: 262px;
     height: 137px;
-    padding: 102px 19px 20px 19px;
+    padding: 99px 19px 4px 19px;
     background: #ccc url(../img/step-2.jpg) 0 0 no-repeat; }
   .step--bg3 {
     width: 262px;
@@ -257,7 +257,7 @@ h2 {
 
 .partner {
   width: 220px;
-  margin: 29px auto;
+  margin: 24px auto;
   text-align: center; }
   .partner__photo-wrap {
     width: 125px;
@@ -279,25 +279,25 @@ h2 {
     .partner__photo-wrap--add-icon-4:after {
       content: url("../img/icon-partner-4.png"); }
   .partner__name {
-    margin-top: 19px;
+    margin-top: 15px;
     font: 14px Montserrat, Arial, sans-serif;
     color: #333;
     font-weight: bold; }
   .partner__about {
-    margin-top: 15px;
+    margin-top: 11px;
     font: 14px "Roboto Light", Arial, sans-serif;
     color: #666; }
   .partner--margin {
-    margin-top: 18px; }
+    margin-top: 12px; }
 
 .meet-partner .btn-more-partners {
   display: block;
   width: 280px;
-  padding: 11px 0;
+  padding: 10px 0;
   border: 2px solid #ff4e50;
   -webkit-border-radius: 20px;
           border-radius: 20px;
-  margin: 0 auto;
+  margin: -4px auto;
   font: 14px Montserrat, Arial, sans-serif;
   color: #ff4e50;
   font-weight: bold; }
@@ -307,10 +307,10 @@ h2 {
     color: #fff; }
 
 .holiday-ideas h2 {
-  margin-top: 38px; }
+  margin-top: 29px; }
 
 .tile {
-  margin: 10px;
+  margin: 5px 0;
   position: relative; }
   .tile__tag {
     font: 22px Montserrat, Arial, sans-serif;
@@ -324,16 +324,17 @@ h2 {
             transform: translate(-50%, -50%); }
   .tile__img {
     width: 100%;
-    height: 100%; }
+    -webkit-border-radius: 5px;
+            border-radius: 5px; }
 
 .form-search-partner {
-  margin-top: 18px; }
+  margin-top: 7px; }
   .form-search-partner__title {
     font: 18px "Roboto Light", Arial, sans-serif;
     color: #333; }
   .form-search-partner__field {
     width: 250px;
-    margin-top: 18px;
+    margin-top: 16px;
     padding: 9px 15px;
     border: 1px solid #ccc;
     -webkit-border-radius: 5px;
@@ -348,22 +349,22 @@ h2 {
       background: #EC4547; }
 
 .footer {
-  padding: 20px 10px 17px 10px;
+  padding: 16px 10px 17px 10px;
   border-top: 4px solid #ff4e50;
-  margin-top: 40px;
+  margin-top: 41px;
   text-align: center; }
   .footer .logo-footer a {
     font: 16px Montserrat, Arial, sans-serif;
     color: #ff4e50;
     font-weight: bold; }
   .footer .company, .footer .partners {
-    margin-top: 17px;
+    margin-top: 12px;
     font: 14px Montserrat, Arial, sans-serif;
     color: #333;
     font-weight: bold; }
 
 .developer {
-  margin-top: 19px; }
+  margin-top: 15px; }
   .developer__designed {
     font: 10px Montserrat, Arial, sans-serif;
     color: #ccc;
@@ -375,7 +376,7 @@ h2 {
 
 .nav {
   width: 210px;
-  margin: 7px auto 0 auto; }
+  margin: 0 auto; }
   .nav__item {
     margin-left: 13px;
     float: left; }
@@ -438,14 +439,9 @@ h2 {
     width: 190px; }
   .holiday-ideas h2 {
     margin-top: 97px; }
-  .tiles {
-    width: 550px;
-    margin: 0 auto; }
   .tile {
-    max-width: 28%;
+    max-width: 32.3%;
     margin: 20px 0 0 0;
-    -webkit-border-radius: 10px;
-            border-radius: 10px;
     float: left; }
   .form-search-partner {
     width: 410px;

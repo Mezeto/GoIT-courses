@@ -5,6 +5,12 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="css/main.css">
+	<!--[if lt IE 10]>
+	<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+	<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+	<style>.login{width:162px;}</style>
+	<script>alert('Обновите версию браузера для корректной работы сайта');</script>
+	<![endif]-->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 	<script src="https://npmcdn.com/imagesloaded@4.1/imagesloaded.pkgd.min.js"></script>
 	<script src="https://npmcdn.com/masonry-layout@4.0/dist/masonry.pkgd.min.js"></script>
@@ -171,10 +177,10 @@
 		<h2>Discover holiday activity ideas</h2>
 
 		<script type="text/tmpl" id="tmplHtml">
-			<div class="tile">
+			<figure class="tile">
 				<img class="tile__img" src="<%= webformatURL %>" alt="img">
-				<p class="tile__tag"><%= tags %></p>
-			</div>
+				<figcaption class="tile__tag"><%= tags.split(',')[0] %></figcaption>
+			</figure>
 		</script>
 
 		<div class="tiles clearfix"></div>

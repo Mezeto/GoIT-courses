@@ -4,15 +4,19 @@ $(function () {
 	var $tiles = $('.tiles');
 
 	$(document).ajaxComplete(function() {
-		$tiles.masonry('destroy');
+		try {
+			$tiles.masonry('destroy');
 
-		$tiles.imagesLoaded(function() {
-			$tiles.masonry({
-				itemSelector: ".tile",
-				columnWidth: ".tile",
-				gutter: 20
+			$tiles.imagesLoaded(function() {
+				$tiles.masonry({
+					itemSelector: ".tile",
+					columnWidth: ".tile",
+					gutter: 10
+				});
 			});
-		});
+		} catch(err) {
+			
+		}
 	});
 
 
@@ -31,7 +35,7 @@ $(function () {
 					var objImages = obj.hits[i];
 					var content = tmpl(tmplHtml, objImages);
 
-					$('.tiles').append(content);
+					$tiles.append(content);
 				}
 			}
 		});
