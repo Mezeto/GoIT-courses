@@ -80,8 +80,7 @@ table {
   display: none;
   width: 30px;
   height: 56px;
-  position: absolute;
-  top: 200px; }
+  position: absolute; }
   @media (min-width: 768px) {
     .jcarousel-control-prev,
     .jcarousel-control-next {
@@ -89,7 +88,7 @@ table {
 
 .jcarousel-control-prev {
   left: 10px;
-  top: 40px; }
+  top: 49px; }
   @media (min-width: 977px) {
     .jcarousel-control-prev {
       left: 20px;
@@ -97,7 +96,7 @@ table {
 
 .jcarousel-control-next {
   right: 10px;
-  top: 40px; }
+  top: 49px; }
   @media (min-width: 977px) {
     .jcarousel-control-next {
       right: 20px;
@@ -306,7 +305,7 @@ h2 {
     background: #EC4547;
     color: #fff; }
 
-.holiday-ideas h2 {
+.holiday-ideas {
   margin-top: 29px; }
 
 .tile {
@@ -388,7 +387,7 @@ h2 {
 
 @media (min-width: 768px) {
   .header {
-    padding: 50px 50px 67px 50px; }
+    padding: 50px 50px 212px 50px; }
   .logo {
     margin: 0;
     float: left; }
@@ -396,17 +395,18 @@ h2 {
     margin: 0;
     float: right; }
   .title {
-    margin-top: 155px;
+    margin-top: 144px;
     font-size: 52px; }
   .descr {
-    margin-top: 39px;
+    margin-top: 21px;
     font-size: 24px; }
   .header .btn-search-partner {
-    margin-top: 39px; }
+    margin-top: 32px;
+    width: 230px; }
   .wrapper {
     padding: 95px 10px 0 10px; }
   .how-works h2 {
-    margin-bottom: 37px; }
+    margin-bottom: 23px; }
   .step-wrap {
     width: 33.3%;
     float: left; }
@@ -437,7 +437,10 @@ h2 {
       margin-top: 56px; }
   .meet-partner .btn-more-partners {
     width: 190px; }
+  .holiday-ideas {
+    margin-top: 97px; }
   .holiday-ideas h2 {
+    margin-bottom: 14px;
     margin-top: 97px; }
   .tile {
     max-width: 32.3%;
@@ -445,7 +448,7 @@ h2 {
     float: left; }
   .form-search-partner {
     width: 410px;
-    margin: 36px auto 0 auto; }
+    margin: 28px auto 0 auto; }
     .form-search-partner__field {
       width: 208px;
       margin-top: 39px;
@@ -456,22 +459,22 @@ h2 {
       margin-top: 39px;
       float: left; }
   .footer {
-    padding: 40px 40px 92px 40px;
+    padding: 38px 40px 92px 40px;
     margin-top: 100px;
     text-align: left;
     position: relative; }
     .footer .logo-footer {
       float: left; }
     .footer .company, .footer .partners {
-      margin: 0 0 0 81px;
+      margin: 0 0 0 94px;
       float: left; }
     .footer .partners {
       margin-left: 100px; }
   .nav {
     width: 100px;
     position: absolute;
-    left: 243px;
-    top: 62px; }
+    left: 253px;
+    top: 64px; }
     .nav__item {
       margin-bottom: 6px;
       float: none; }

@@ -40,7 +40,6 @@
 	width: 30px;
 	height: 56px;
 	position: absolute;
-	top: 200px;
 	@media (min-width: 768px) {
 		display: block;
 	}
@@ -51,7 +50,7 @@
 
 .jcarousel-control-prev {
 	left: 10px;
-	top: 40px;
+	top: 49px;
 	@media (min-width: 977px) {
 		left: 20px;
 		top: 152px;
@@ -60,7 +59,7 @@
 
 .jcarousel-control-next {
 	right: 10px;
-	top: 40px;
+	top: 49px;
 	@media (min-width: 977px) {
 		right: 20px;
 		top: 152px;

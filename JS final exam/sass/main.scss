@@ -264,7 +264,7 @@ h2 {
 }
 
 //*********section***
-.holiday-ideas h2 {
+.holiday-ideas {
 	margin-top: 29px;
 }
 
@@ -364,7 +364,7 @@ h2 {
 @media (min-width: 768px) {
 
 	.header {
-		padding: 50px 50px 67px 50px;
+		padding: 50px 50px 212px 50px;
 	}
 
 	.logo {
@@ -378,17 +378,18 @@ h2 {
 	}
 
 	.title {
-		margin-top: 155px;
+		margin-top: 144px;
 		font-size: 52px;
 	} 
 
 	.descr {
-		margin-top: 39px;
+		margin-top: 21px;
 		font-size: 24px;
 	}
 
 	.header .btn-search-partner {
-		margin-top: 39px;
+		margin-top: 32px;
+		width: 230px;
 	}
 
 	//******section***
@@ -397,7 +398,7 @@ h2 {
 	}
 
 	.how-works h2 {
-		margin-bottom: 37px;
+		margin-bottom: 23px;
 	}
 
 	.step-wrap {
@@ -451,7 +452,12 @@ h2 {
 	}
 
 	//**********section****
+	.holiday-ideas {
+		margin-top: 97px;
+	}
+
 	.holiday-ideas h2 {
+		margin-bottom: 14px;
 		margin-top: 97px;
 	}
 
@@ -463,7 +469,7 @@ h2 {
 
 	.form-search-partner {
 		width: 410px;
-		margin: 36px auto 0 auto;
+		margin: 28px auto 0 auto;
 		&__field {
 			width: 238px - 15px - 15px;
 			margin-top: 39px;
@@ -480,7 +486,7 @@ h2 {
 
 	//*****section***
 	.footer {
-		padding: 40px 40px 92px 40px;
+		padding: 38px 40px 92px 40px;
 		margin-top: 100px;
 		text-align: left;
 		position: relative;
@@ -488,7 +494,7 @@ h2 {
 			float: left;
 		}
 		.company, .partners {
-			margin: 0 0 0 81px;
+			margin: 0 0 0 94px;
 			float: left;
 		}
 		.partners {
@@ -499,8 +505,8 @@ h2 {
 	.nav {
 		width: 100px;
 		position: absolute;
-		left: 243px;
-		top: 62px;
+		left: 253px;
+		top: 64px;
 		&__item {
 			margin-bottom: 6px;
 			float: none;
