@@ -7,6 +7,7 @@ var gulp         = require('gulp'),
 	 uglify       = require('gulp-uglify'),
 	 cssnano      = require('gulp-cssnano'),
 	 imagemin     = require('gulp-imagemin'),
+	 rigger       = require('gulp-rigger'),
 	 pngquant     = require('imagemin-pngquant');
 
 
@@ -28,6 +29,7 @@ gulp.task('html', function() {
 
 gulp.task('js', function() {
 	return gulp.src('js/*.js')
+		.pipe(rigger())
 		.pipe(gulp.dest('js/'))
 		.pipe(browserSync.reload({stream: true}));
 });
@@ -44,8 +46,8 @@ gulp.task('webServer', function() {
 
 // Сборка
 gulp.task('build:js', function() {
-	return gulp.src('src/js/*.js')
-		.pipe(concat('script.js'))
+	return gulp.src('src/js/main.js')
+		.pipe(rigger())
 		.pipe(uglify())
 		.pipe(gulp.dest('build/js'));
 });

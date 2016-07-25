@@ -1,3 +1,10 @@
+//= jquery-1.12.1.min.js
+//= imagesloaded.pkgd.js
+//= jquery.masonry.min.js
+//= jquery.jcarousel.js
+//= tmpl.js
+
+
 $(function () {
 
 	// инит. масонри
