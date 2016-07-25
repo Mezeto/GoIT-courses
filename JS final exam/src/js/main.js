@@ -1,10 +1,3 @@
-//= jquery-1.12.1.min.js
-//= imagesloaded.pkgd.js
-//= jquery.masonry.min.js
-//= jquery.jcarousel.js
-//= tmpl.js
-
-
 $(function () {
 
 	// инит. масонри
@@ -22,7 +15,7 @@ $(function () {
 				});
 			});
 		} catch(err) {
-			
+
 		}
 	});
 
@@ -58,7 +51,7 @@ $(function () {
 		$tiles.html('');
 
 		ajaxQuery(query);
-		
+
 		e.preventDefault();
 	});
 
@@ -79,5 +72,5 @@ $(function () {
 	$('.jcarousel-control-next').jcarouselControl({
 		target: '+=1'
 	});
-	
+
 });//Ready
