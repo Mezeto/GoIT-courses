@@ -1,2 +1,2 @@
-# persikov-igor.github.io
+# GoIT-courses
 GoIT Homework
